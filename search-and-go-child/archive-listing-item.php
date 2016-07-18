@@ -87,28 +87,23 @@ get_header(); ?>
 			<div class="eltd-listing-list eltd-advanced-search-holder" <?php echo esc_attr($data_params)?>>
 				
 				<div class="eltd-listing-list-inner">
-					<?php if (is_archive()) { /* zig */
-						 //$checking = get_category( get_query_var( 'cat' ) );
-						//$checking = get_category( get_query_var( 'cat' ) );
-						//$checking = get_query_var( 'taxonomy' );
-						//echo "<pre>"; var_dump($checking); echo "</pre"; 
-						echo "Params:</br><pre>"; var_dump($params); echo "</pre><br>"; 
-						//echo "<pre>"; var_dump($query->tax_query); echo "</pre"; // works
-						//echo "<pre>"; var_dump($query); echo "</pre"; // works
-						//$feat = ecc_query_feat_listing_items($params);
-						//echo "Featured:</br><pre>"; var_dump($feat->posts); echo "</pre><br>"; 
+					<?php if (is_archive()) { 
 					?> 
-						<div class="ecc-featured-list-items">
-							<h2 class="ecc-featured-list-title">Featured Members</h2>
-							<?php echo do_shortcode('[ecc_feat_list listing_feat_list_tax_number="3"]'); ?> 
-							<?php $feat = ecc_query_feat_listing_items($params); ?>
-						</div>
+<?php  /* echo do_shortcode('[eltd_listing_feat_list listing_feat_list_item_number="3" listing_feat_list_tax_number="3"]');*/ ?>	 
+						<?php /* <div class="ecc-featured-list-items"> */ ?>
+							<?php /* <h2 class="ecc-featured-list-title">Featured Members</h2> */ ?>
+							<?php 
+								$feat_params = $params;
+								echo ecc_listing_feat_list($feat_params);
+							?>
+						<?php /* </div> */ ?>
+
 					<?php } /* zig - end archive */ ?>
 					<?php search_and_go_elated_get_advanced_search_html( $max_items); ?>
 					
 					<div class="eltd-listing-list-items">
 						<?php if ( $query->have_posts() ) {
-echo "SQL-QUery for listings:  {$query->request}";
+//echo "SQL-QUery for listings:  {$query->request}";
 							while( $query->have_posts() ) {
 								$query->the_post();
 								search_and_go_elated_get_listing_list_item_template();

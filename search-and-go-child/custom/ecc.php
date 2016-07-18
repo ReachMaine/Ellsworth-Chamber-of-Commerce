@@ -113,24 +113,62 @@ if ( ! function_exists( 'ecc_query_feat_listing_items' ) ) {
 
 }
 
+// function for shortcode : ecc_feat_list
 function  ecc_listing_feat_list( $atts) {
+//echo "atts <pre>"; var_dump($atts); echo "</pre>";
 		$args = array(
 			'listing_feat_list_item_number'	=> '-1',
-			'listing_feat_list_tax_number'	=> ''
+			'type'	=> '',
+			'location' => '',
+			'category' => '',
+			'number' => "3"
 		);
 
-		$params = shortcode_atts($args, $atts);
+		$params = shortcode_atts($args, $atts, 'ecc_feat_list' );
 		extract($params);
-		
+//echo "PARAMS <pre>"; var_dump($params); echo "</pre>";
 		//set post args
 		//Get listing items which are set as featured for listing featured list shortcode 
-		$post_args = array(
-			'posts_per_page'   => $listing_feat_list_item_number,
+		/* $post_args = array(
+			'posts_per_page'   => $number,
 			'meta_key'         => 'eltd_listing_feature_item',
 			'meta_value'       => 'yes',
 			'post_type'        => 'listing-item',
 			'post_status'      => 'publish'
+		); */
+		$meta_query = array(
+			array(
+					'key' => 'eltd_listing_feature_item',
+					'value' => 'yes'
+				));
+		if ( isset($type) ) {
+			if($type !== '' && $type !=='all' ){
+				$meta_query[] = array(
+					'key' => 'eltd_listing_item_type',
+					'value' => $type);
+				$meta_query['relation'] = 'AND';
+			}
+		}
+		
+
+		$post_args = array(
+			'posts_per_page'   => $number,
+			'meta_query' => 	$meta_query,
+			//'meta_key'         => 'eltd_listing_feature_item',
+			//'meta_value'       => 'yes',
+			'post_type'        => 'listing-item',
+			'post_status'      => 'publish'
 		);
+		if ( isset( $category ) ) {
+			if($category !== '' && $category !=='all' ){
+				$post_args['tax_query'][] = array(
+					'taxonomy' => 'listing-item-category',
+					'field' => 'term_id',
+					'terms' => (int)$category
+				);
+			}
+		}
+
 		//set taxonomy args
 		$tax_args = array(
 			'number' => (int)$listing_feat_list_tax_number,
@@ -142,14 +180,36 @@ function  ecc_listing_feat_list( $atts) {
 			)
 		);
 		
-		
 		$featured_tax_array = $featured_post_array = array();		
-		
+//		echo "post_args:  <pre>"; var_dump($post_args); echo "</pre>";
 		//get all featured listing items
 		$posts_array = get_posts( $post_args );
+//echo "Posts <pre>"; var_dump($posts_array); echo "</pre>";
+//echo "Posts count: <pre>"; echo count($posts_array); echo "</pre><br>";		
 		$html_out = "";
 		$html_out .= '<div class = "eltd-listing-feat-list-holder">';
-		$html_out .= "ecc_feat_list here.";
+		$html_out .= '<div class = "eltd-listing-feat-list-holder-sizer"></div>';
+
+		foreach($posts_array as $listpost){
+			/*
+			$params['item_permalink'] = $this->getListingPermalink($feature_obj['post_object']->ID);
+					$params['item_title'] = $feature_obj['post_object']->post_title;
+					
+					//get image class and size 
+					$image_params = $this->getListingItemImageParams($feature_obj['post_object']->ID);					
+					
+					$params['item_layout_class'] = $image_params['layout_class']; 
+					$params['item_feature_image'] = $this->getListingFeatureImage($feature_obj['post_object']->ID, $image_params['thumb_size']);
+					 
+			*/
+			$params['item_permalink'] = get_permalink($listpost->ID);
+			$params['item_title'] = $listpost->post_title;
+			$params['item_layout_class'] = 'eltd-listing-feature-square'; 
+			$params['item_feature_image'] = get_the_post_thumbnail($listpost->ID, $image_size);
+			$html_out .= eltd_listing_get_shortcode_module_template_part('listing', 'listing-feature-item', '', $params);
+		
+			
+		}
 		$html_out .= '</div>';
 		return ($html_out);
 		
