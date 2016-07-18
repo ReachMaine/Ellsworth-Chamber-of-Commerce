@@ -53,8 +53,13 @@ ul.ecc_members_cats > li {
 .eltd-blog-list .eltd-blog-list-item .eltd-item-info-section .eltd-post-info-author {
   display: none; }
 
-a {
-  color: green; }
+/* top menu */
+.eltd-main-menu > ul > li > a > span.item_outer {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+  margin: 5px; }
+.eltd-main-menu > ul > li:last-child > a span.item_inner {
+  padding-right: 19px; }
 
 /* ----  Media Settings --------------------------------- */
 /* end Media Settings ------------------------------------------ */

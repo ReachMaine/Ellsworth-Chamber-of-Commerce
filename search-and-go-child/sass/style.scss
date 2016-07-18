@@ -33,9 +33,17 @@ Template: search-and-go
 	}
 }
 
-a {
-	color: green;
-}
+/* top menu */
 
+.eltd-main-menu>ul{
+	>li>a>span.item_outer {
+	background-color: rgba(255, 255, 255, 0.9);
+	border-radius: 5px;
+	margin: 5px;
+	}
+	>li:last-child>a span.item_inner {
+		padding-right: 19px;
+	}
+}
 
 @import "partials/media"; // keep at end of of file 
