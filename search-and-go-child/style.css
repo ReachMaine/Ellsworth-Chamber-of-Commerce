@@ -1,0 +1,37 @@
+@import url("../search-and-go/style.css");
+/*
+Theme Name: Search and Go Child
+Theme URI: http://searchandgo.elated-themes.com
+Description: A child theme of Search and GO
+Author: Select Themes
+Author URI: http://themeforest.net/user/elated-themes
+Version: 1.0.0
+Template: search-and-go
+*/
+/* Colors ---------------------------------------------- */
+/* Typography ------------------------------------------ */
+/* General */
+/* responsive video embed */
+.ea-responsive-container {
+  position: relative;
+  padding-bottom: 50.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 1em; }
+  .ea-responsive-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+/* =Theme customization starts here */
+/* single listing */
+.eltd-single-listing .eltd-post-image {
+  display: table-cell;
+  padding-right: 10px;
+  width: 20%; }
+
+/* ----  Media Settings --------------------------------- */
+/* end Media Settings ------------------------------------------ */
