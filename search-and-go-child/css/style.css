@@ -53,7 +53,7 @@ ul.ecc_members_cats > li {
 .eltd-blog-list .eltd-blog-list-item .eltd-item-info-section .eltd-post-info-author {
   display: none; }
 
-/* top menu */
+/* menu */
 .eltd-main-menu > ul > li > a > span.item_outer {
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 5px;
@@ -63,6 +63,12 @@ ul.ecc_members_cats > li {
 
 .eltd-btn.eltd-btn-outline, .eltd-login-register-widget .eltd-logged-in-user > span {
   background-color: rgba(255, 255, 255, 0.9); }
+
+.eltd-logo-wrapper {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 10px; }
 
 /* ----  Media Settings --------------------------------- */
 /* end Media Settings ------------------------------------------ */
