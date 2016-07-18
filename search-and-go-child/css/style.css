@@ -1,4 +1,3 @@
-@import url("../search-and-go/style.css");
 /*
 Theme Name: Ellsworth Chamber Search and Go
 Theme URI: http://searchandgo.elated-themes.com
@@ -7,6 +6,7 @@ Author:  Reach Maine
 Version: 1.0.0
 Template: search-and-go
 */
+@import url("../search-and-go/style.css");
 /* Colors ---------------------------------------------- */
 /* Typography ------------------------------------------ */
 /* General */
@@ -52,6 +52,9 @@ ul.ecc_members_cats > li {
 
 .eltd-blog-list .eltd-blog-list-item .eltd-item-info-section .eltd-post-info-author {
   display: none; }
+
+a {
+  color: green; }
 
 /* ----  Media Settings --------------------------------- */
 /* end Media Settings ------------------------------------------ */
