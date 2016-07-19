@@ -26,6 +26,7 @@ $transparent_white: rgba(255, 255, 255, 0.9);
 		width: 20%;
 	}
 }
+
 .eltd-blog-list {
 	.eltd-blog-list-item {
 		.eltd-item-info-section {
@@ -36,6 +37,16 @@ $transparent_white: rgba(255, 255, 255, 0.9);
 	}
 }
 
+
+/* blog archive */
+.eltd-listing-list-items { 
+	.eltd-listing-list-item {
+		.eltd-listing-item-image {
+			width: 20%;
+			background-size: contain;
+		}
+	}
+}
 /* menu */
 
 .eltd-main-menu>ul{
