@@ -94,6 +94,7 @@ get_header(); ?>
 							<?php /* <h2 class="ecc-featured-list-title">Featured Members</h2> */ ?>
 							<?php 
 								$feat_params = $params;
+								$feat_params['number'] = 4;
 								echo ecc_listing_feat_list($feat_params);
 							?>
 						<?php /* </div> */ ?>

@@ -121,7 +121,7 @@ function  ecc_listing_feat_list( $atts) {
 			'type'	=> '',
 			'location' => '',
 			'category' => '',
-			'number' => "3"
+			'number' => "4"
 		);
 
 		$params = shortcode_atts($args, $atts, 'ecc_feat_list' );
@@ -152,12 +152,14 @@ function  ecc_listing_feat_list( $atts) {
 		
 
 		$post_args = array(
-			'posts_per_page'   => $number,
-			'meta_query' => 	$meta_query,
+			'posts_per_page' => $number,
+			'meta_query' 	=> 	$meta_query,
 			//'meta_key'         => 'eltd_listing_feature_item',
 			//'meta_value'       => 'yes',
-			'post_type'        => 'listing-item',
-			'post_status'      => 'publish'
+			'post_type'     => 'listing-item',
+			'post_status'	=> 'publish',
+			'orderby' 		=> 'rand'
+
 		);
 		if ( isset( $category ) ) {
 			if($category !== '' && $category !=='all' ){
@@ -171,7 +173,7 @@ function  ecc_listing_feat_list( $atts) {
 
 		//set taxonomy args
 		$tax_args = array(
-			'number' => (int)$listing_feat_list_tax_number,
+			'number' => (int)$number,
 			'meta_query' => array(
 				array(
 					'key' => 'featured_taxonomy',

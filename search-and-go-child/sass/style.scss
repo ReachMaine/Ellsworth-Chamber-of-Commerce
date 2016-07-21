@@ -20,11 +20,18 @@ $transparent_white: rgba(255, 255, 255, 0.9);
 
 /* single listing */
 .eltd-single-listing {
-	.eltd-post-image {
-		display: table-cell;
-		padding-right: 10px;
-		width: 20%;
+	.eltd-listing-title-holder {
+		.eltd-post-image {
+			display: table-cell;
+			width: 25%;
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+		.eltd-listing-title-category {
+			padding-left: 10px;
+		}
 	}
+	
 }
 
 .eltd-blog-list {
