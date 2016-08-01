@@ -44,12 +44,9 @@ ul.ecc_members_cats > li {
   list-style-type: none; }
 
 /* =Theme customization starts here */
-/* header stuff */
-.eltd-logo-wrapper {
-  background-color: inherit !important; }
-  .eltd-logo-wrapper a img {
-    -webkit-filter: drop-shadow(5px 5px 5px white);
-    filter: drop-shadow(5px 5px 5px white); }
+/* HOMEPAGE */
+.eltd-custom-font-holder {
+  text-shadow: 2px 2px black; }
 
 /* single listing */
 .eltd-single-listing .eltd-listing-title-holder .eltd-post-image {
