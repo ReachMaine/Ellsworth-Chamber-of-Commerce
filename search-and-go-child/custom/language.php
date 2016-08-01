@@ -9,13 +9,13 @@
 		            case 'Category' :
 		                $translated_text = __( '',  $domain  );
 		                break;
-		            /*case 'Type here...':
-		            	$translated_text = __( 'Search...',  $domain  );
+		            case 'Previous post':
+		            	$translated_text = __( 'Previous',  $domain  );
 		            	break;
-		            case 'BLOG CATEGORIES':
-		            	$translated_text = __( 'Found in',  $domain  );
+		            case 'Next post':
+		            	$translated_text = __( 'Next',  $domain  );
 		            	break;
-		            case 'Share this post:':
+		            /* case 'Share this post:':
 		            	$translated_text = __('Share', ' $domain );
 		            	break; */
 		        }

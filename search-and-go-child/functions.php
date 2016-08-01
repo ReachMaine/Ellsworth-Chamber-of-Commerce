@@ -9,6 +9,7 @@ function search_and_go_elated_child_theme_enqueue_scripts() {
 add_action('wp_enqueue_scripts', 'search_and_go_elated_child_theme_enqueue_scripts', 11);
 
 require_once(get_stylesheet_directory().'/custom/ecc.php'); 
+require_once(get_stylesheet_directory().'/custom/language.php'); 
 
 
 
@@ -32,7 +33,7 @@ require_once(get_stylesheet_directory().'/custom/ecc.php');
 		echo $outstring;
 	}
 
-	//add_action('wp_enqueue_scripts', 'reach_scripts', 100);
+	/* add_action('wp_enqueue_scripts', 'reach_scripts', 100);
 	function reach_scripts() {
 			wp_deregister_script( 'eltd-ui-admin' ); //remove offending js for events conflict - 
-	}
+	} */

@@ -61,6 +61,13 @@ $transparent_white: rgba(255, 255, 255, 0.9);
 		}
 	}
 }
+// box style archive
+.eltd-blog-list-holder.eltd-boxes {
+	.eltd-item-text-holder {
+		padding-top: 0px;
+	}
+}
+
 /* menu */
 
 .eltd-main-menu>ul{
