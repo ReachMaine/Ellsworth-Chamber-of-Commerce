@@ -31,3 +31,8 @@ require_once(get_stylesheet_directory().'/custom/ecc.php');
 		$outstring .= '</p>';
 		echo $outstring;
 	}
+
+	//add_action('wp_enqueue_scripts', 'reach_scripts', 100);
+	function reach_scripts() {
+			wp_deregister_script( 'eltd-ui-admin' ); //remove offending js for events conflict - 
+	}
