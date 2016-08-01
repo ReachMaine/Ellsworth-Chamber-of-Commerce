@@ -92,4 +92,14 @@ $transparent_white: rgba(255, 255, 255, 0.9);
 	margin-top: 10px;
 }
 
+/* Sticky Header */
+
+.eltd-page-header .eltd-sticky-header .eltd-main-menu>ul>li>a, .eltd-sticky-header .eltd-login-register-widget .eltd-logged-in-user>span {
+	color: black;
+}
+
+.eltd-main-menu.eltd-sticky-nav>ul>li:last-child>a span.item_inner {
+	padding-right: 19px;
+}
+
 @import "partials/media"; // keep at end of of file 
