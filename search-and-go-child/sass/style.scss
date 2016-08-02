@@ -43,6 +43,12 @@ $transparent_white: rgba(255, 255, 255, 0.9);
 		font-size: 27px;
 	}
 }
+
+/* Circular type buttons on homepage */
+.eltd-listing-search-holder .eltd-listing-search-categories-holder .eltd-listing-search-category-link {
+	background-color: rgba( 0, 0, 0, .3);
+}
+
 /* single listing */
 .eltd-single-listing {
 	.eltd-listing-title-holder {
