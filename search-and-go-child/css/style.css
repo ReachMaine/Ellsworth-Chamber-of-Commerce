@@ -48,6 +48,13 @@ ul.ecc_members_cats > li {
 .eltd-custom-font-holder {
   text-shadow: 2px 2px black; }
 
+.eltd-listing-search-holder .eltd-listing-search-categories-holder .eltd-listing-search-category-link .eltd-listing-search-category-link-inner-holder .eltd-listing-search-category-title {
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 0px; }
+.eltd-listing-search-holder .eltd-listing-search-categories-holder .eltd-listing-search-category-link i, .eltd-listing-search-holder .eltd-listing-search-categories-holder .eltd-listing-search-category-link .eltd-listing-search-holder .eltd-listing-search-categories-holder .eltd-listing-search-category-link span {
+  font-size: 27px; }
+
 /* single listing */
 .eltd-single-listing .eltd-listing-title-holder .eltd-post-image {
   display: table-cell;

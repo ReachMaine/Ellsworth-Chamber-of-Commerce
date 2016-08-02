@@ -24,8 +24,16 @@ $transparent_white: rgba(255, 255, 255, 0.9);
 	text-shadow: 2px 2px black;
 }
 
-
-
+.eltd-listing-search-holder .eltd-listing-search-categories-holder .eltd-listing-search-category-link {
+	.eltd-listing-search-category-link-inner-holder .eltd-listing-search-category-title {
+	font-size: 15px;
+	font-weight: bold;
+	margin-top: 0px;
+	}
+	i, .eltd-listing-search-holder .eltd-listing-search-categories-holder .eltd-listing-search-category-link span {
+		font-size: 27px;
+	}
+}
 /* single listing */
 .eltd-single-listing {
 	.eltd-listing-title-holder {
