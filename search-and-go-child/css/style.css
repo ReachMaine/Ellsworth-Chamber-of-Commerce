@@ -43,6 +43,19 @@ ul.ecc_members_cats > li {
 .ecs-event-list {
   list-style-type: none; }
 
+.evcal_evdata_img {
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+@media only screen and (min-width: 321px) {
+  .ajde_evcal_calendar:not(.boxy) #evcal_list.eventon_events_list .eventon_list_event .ev_ftImg {
+    width: 100px;
+    background-size: contain; }
+  .ajde_evcal_calendar:not(.boxy) #evcal_list.eventon_events_list .eventon_list_event .hasFtIMG .evcal_cblock {
+    left: 100px; }
+  .ajde_evcal_calendar:not(.boxy) #evcal_list.eventon_events_list .eventon_list_event .hasFtIMG .evcal_desc,
+  .ajde_evcal_calendar:not(.boxy) #evcal_list.eventon_events_list .eventon_list_event a.sin_val.hasFtIMG .evcal_desc {
+    padding-left: 170px; } }
 /* =Theme customization starts here */
 /* HOMEPAGE */
 .eltd-logo-wrapper {

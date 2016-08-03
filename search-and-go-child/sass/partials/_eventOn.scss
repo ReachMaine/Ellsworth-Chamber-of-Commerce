@@ -1,0 +1,24 @@
+// eventOn styling
+	// image on card when expanded.
+	.evcal_evdata_img {
+    	background-repeat: no-repeat;
+    	background-size: contain;
+   }
+ // event in list (ex: homepage)
+@media only screen and (min-width: 321px) { // everyone EXCEPT smallest phone
+.ajde_evcal_calendar:not(.boxy) {
+	#evcal_list.eventon_events_list .eventon_list_event  {
+		.ev_ftImg { // image
+			width: 100px; // (was 50)
+			background-size: contain;
+		}
+		 .hasFtIMG .evcal_cblock {  // time / clock
+			left: 100px; // was 50
+		}
+		.hasFtIMG .evcal_desc,
+		a.sin_val.hasFtIMG .evcal_desc {
+			padding-left: 170px // was 120
+		}
+	}
+}
+}
