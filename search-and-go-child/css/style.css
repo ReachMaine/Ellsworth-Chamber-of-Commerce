@@ -74,7 +74,14 @@ ul.ecc_members_cats > li {
 .eltd-listing-search-holder .eltd-listing-search-categories-holder .eltd-listing-search-category-link i, .eltd-listing-search-holder .eltd-listing-search-categories-holder .eltd-listing-search-category-link .eltd-listing-search-holder .eltd-listing-search-categories-holder .eltd-listing-search-category-link span {
   font-size: 27px; }
 
-/* single listing */
+/****** single listing ******/
+.eltd-title .eltd-title-image img {
+  width: inherit;
+  max-width: initial; }
+
+.eltd-title.eltd-has-background {
+  background-size: cover; }
+
 .eltd-single-listing .eltd-listing-title-holder .eltd-post-image {
   display: table-cell;
   width: 25%;
@@ -83,6 +90,7 @@ ul.ecc_members_cats > li {
 .eltd-single-listing .eltd-listing-title-holder .eltd-listing-title-category {
   padding-left: 10px; }
 
+/****** end single listing ******/
 .eltd-blog-list .eltd-blog-list-item .eltd-item-info-section .eltd-post-info-author {
   display: none; }
 
@@ -93,6 +101,8 @@ ul.ecc_members_cats > li {
 
 .eltd-blog-list-holder.eltd-boxes .eltd-item-text-holder {
   padding-top: 0px; }
+.eltd-blog-list-holder.eltd-boxes .eltd-item-title {
+  text-align: center; }
 
 /* menu */
 .eltd-main-menu > ul > li > a > span.item_outer {
