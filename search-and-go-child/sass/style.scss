@@ -27,7 +27,10 @@ $transparent_white: rgba(255, 255, 255, 0.9);
 	    filter: drop-shadow(5px 5px 5px white); 
 	}
 }
-
+/* Circular type buttons on homepage */
+.eltd-listing-search-holder .eltd-listing-search-categories-holder .eltd-listing-search-category-link {
+	background-color: rgba( 0, 0, 0, .3);
+}
 
 
 .eltd-custom-font-holder {
@@ -44,6 +47,7 @@ $transparent_white: rgba(255, 255, 255, 0.9);
 		font-size: 27px;
 	}
 }
+
 /****** single listing ******/
 //header image 
 .eltd-title .eltd-title-image img {
@@ -54,6 +58,10 @@ $transparent_white: rgba(255, 255, 255, 0.9);
 	background-size: cover;
 }
 // content
+
+
+
+/* single listing */
 .eltd-single-listing {
 	.eltd-listing-title-holder {
 		.eltd-post-image {
