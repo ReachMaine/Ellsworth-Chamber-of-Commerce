@@ -66,7 +66,7 @@ ul.ecc_members_cats > li {
 
 /* Circular type buttons on homepage */
 .eltd-listing-search-holder .eltd-listing-search-categories-holder .eltd-listing-search-category-link {
-  background-color: rgba(0, 0, 0, 0.3); }
+  background-color: rgba(0, 0, 0, 0.7); }
 
 .eltd-custom-font-holder {
   text-shadow: 2px 2px black;
@@ -80,7 +80,6 @@ ul.ecc_members_cats > li {
 .eltd-listing-search-holder .eltd-listing-search-categories-holder .eltd-listing-search-category-link i, .eltd-listing-search-holder .eltd-listing-search-categories-holder .eltd-listing-search-category-link .eltd-listing-search-holder .eltd-listing-search-categories-holder .eltd-listing-search-category-link span {
   font-size: 27px; }
 
-<<<<<<< Updated upstream
 /****** single listing ******/
 .eltd-title .eltd-title-image img {
   width: inherit;
@@ -88,13 +87,7 @@ ul.ecc_members_cats > li {
 
 .eltd-title.eltd-has-background {
   background-size: cover; }
-=======
-/* Circular type buttons on homepage */
-.eltd-listing-search-holder .eltd-listing-search-categories-holder .eltd-listing-search-category-link {
-  background-color: rgba(0, 0, 0, 0.7); }
->>>>>>> Stashed changes
 
-/* single listing */
 .eltd-single-listing .eltd-listing-title-holder .eltd-post-image {
   display: table-cell;
   width: 25%;

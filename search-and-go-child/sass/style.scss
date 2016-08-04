@@ -27,11 +27,11 @@ $transparent_white: rgba(255, 255, 255, 0.9);
 	    filter: drop-shadow(5px 5px 5px white); 
 	}
 }
+
 /* Circular type buttons on homepage */
 .eltd-listing-search-holder .eltd-listing-search-categories-holder .eltd-listing-search-category-link {
-	background-color: rgba( 0, 0, 0, .3);
+	background-color: rgba( 0, 0, 0, .7);
 }
-
 
 .eltd-custom-font-holder {
 	text-shadow: 2px 2px black;
@@ -50,7 +50,7 @@ $transparent_white: rgba(255, 255, 255, 0.9);
 	}
 }
 
-<<<<<<< Updated upstream
+
 /****** single listing ******/
 //header image 
 .eltd-title .eltd-title-image img {
@@ -59,17 +59,8 @@ $transparent_white: rgba(255, 255, 255, 0.9);
 }
 .eltd-title.eltd-has-background {
 	background-size: cover;
-=======
-/* Circular type buttons on homepage */
-.eltd-listing-search-holder .eltd-listing-search-categories-holder .eltd-listing-search-category-link {
-	background-color: rgba( 0, 0, 0, .7);
->>>>>>> Stashed changes
 }
 // content
-
-
-
-/* single listing */
 .eltd-single-listing {
 	.eltd-listing-title-holder {
 		.eltd-post-image {
@@ -85,6 +76,7 @@ $transparent_white: rgba(255, 255, 255, 0.9);
 	
 }
 /****** end single listing ******/
+
 .eltd-blog-list {
 	.eltd-blog-list-item {
 		.eltd-item-info-section {
