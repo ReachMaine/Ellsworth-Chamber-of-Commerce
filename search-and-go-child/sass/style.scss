@@ -35,6 +35,8 @@ $transparent_white: rgba(255, 255, 255, 0.9);
 
 .eltd-custom-font-holder {
 	text-shadow: 2px 2px black;
+	background-color: rgba( 0, 0, 0, .4);
+	border-radius: 5px;
 }
 
 .eltd-listing-search-holder .eltd-listing-search-categories-holder .eltd-listing-search-category-link {
@@ -48,6 +50,7 @@ $transparent_white: rgba(255, 255, 255, 0.9);
 	}
 }
 
+<<<<<<< Updated upstream
 /****** single listing ******/
 //header image 
 .eltd-title .eltd-title-image img {
@@ -56,6 +59,11 @@ $transparent_white: rgba(255, 255, 255, 0.9);
 }
 .eltd-title.eltd-has-background {
 	background-size: cover;
+=======
+/* Circular type buttons on homepage */
+.eltd-listing-search-holder .eltd-listing-search-categories-holder .eltd-listing-search-category-link {
+	background-color: rgba( 0, 0, 0, .7);
+>>>>>>> Stashed changes
 }
 // content
 
