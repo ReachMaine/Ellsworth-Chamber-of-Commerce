@@ -23,8 +23,8 @@ $transparent_white: rgba(255, 255, 255, 0.9);
 .eltd-logo-wrapper {
   	background-color: inherit !important; 
 	a img {
-	    -webkit-filter: drop-shadow(5px 5px 5px white);
-	    filter: drop-shadow(5px 5px 5px white); 
+	    -webkit-filter: drop-shadow(3px 3px 5px #333);
+	    filter: drop-shadow(3px 3px 5px #333); 
 	}
 }
 

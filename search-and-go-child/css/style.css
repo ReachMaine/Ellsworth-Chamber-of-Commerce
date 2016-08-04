@@ -61,8 +61,8 @@ ul.ecc_members_cats > li {
 .eltd-logo-wrapper {
   background-color: inherit !important; }
   .eltd-logo-wrapper a img {
-    -webkit-filter: drop-shadow(5px 5px 5px white);
-    filter: drop-shadow(5px 5px 5px white); }
+    -webkit-filter: drop-shadow(3px 3px 5px #333333);
+    filter: drop-shadow(3px 3px 5px #333333); }
 
 /* Circular type buttons on homepage */
 .eltd-listing-search-holder .eltd-listing-search-categories-holder .eltd-listing-search-category-link {
