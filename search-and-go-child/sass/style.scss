@@ -10,8 +10,7 @@ Template: search-and-go
  
 @import "partials/settings";
 @import "partials/ecc";
-@import "partials/tribe_events";
-@import "partials/eventOn";
+import "partials/eventOn";
 
  
 /* =Theme customization starts here */

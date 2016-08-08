@@ -121,11 +121,13 @@ function  ecc_listing_feat_list( $atts) {
 			'type'	=> '',
 			'location' => '',
 			'category' => '',
-			'number' => "4"
+			'number' => "4", 
 		);
+		$html_out = "";
 
 		$params = shortcode_atts($args, $atts, 'ecc_feat_list' );
 		extract($params);
+//$html_out .= "<p>location = ".$location." and type = ".$type." and number is: ".$number."</p>";
 //echo "PARAMS <pre>"; var_dump($params); echo "</pre>";
 		//set post args
 		//Get listing items which are set as featured for listing featured list shortcode 
@@ -171,6 +173,16 @@ function  ecc_listing_feat_list( $atts) {
 			}
 		}
 
+		if (isset ($location) ) {
+			if($location !== '' ){
+				//$location_term = get_term_by( 'name', $location, 'listing-item-location' );
+				$post_args['tax_query'][] = array(
+						'taxonomy' => 'listing-item-location',
+						'field' => 'term_id',
+						'terms' => (int)$location
+					);
+			}
+		}
 		//set taxonomy args
 		$tax_args = array(
 			'number' => (int)$number,
@@ -188,29 +200,34 @@ function  ecc_listing_feat_list( $atts) {
 		$posts_array = get_posts( $post_args );
 //echo "Posts <pre>"; var_dump($posts_array); echo "</pre>";
 //echo "Posts count: <pre>"; echo count($posts_array); echo "</pre><br>";		
-		$html_out = "";
-		$html_out .= '<div class = "eltd-listing-feat-list-holder">';
-		$html_out .= '<div class = "eltd-listing-feat-list-holder-sizer"></div>';
 
-		foreach($posts_array as $listpost){
-			/*
-			$params['item_permalink'] = $this->getListingPermalink($feature_obj['post_object']->ID);
-					$params['item_title'] = $feature_obj['post_object']->post_title;
-					
-					//get image class and size 
-					$image_params = $this->getListingItemImageParams($feature_obj['post_object']->ID);					
-					
-					$params['item_layout_class'] = $image_params['layout_class']; 
-					$params['item_feature_image'] = $this->getListingFeatureImage($feature_obj['post_object']->ID, $image_params['thumb_size']);
-					 
-			*/
-			$params['item_permalink'] = get_permalink($listpost->ID);
-			$params['item_title'] = $listpost->post_title;
-			$params['item_layout_class'] = 'eltd-listing-feature-square'; 
-			$params['item_feature_image'] = get_the_post_thumbnail($listpost->ID, $image_size);
-			$html_out .= eltd_listing_get_shortcode_module_template_part('listing', 'listing-feature-item', '', $params);
-		
+		$html_out .= '<div class = "eltd-listing-feat-list-holder ecc-box">';
+		$html_out .= '<div class = "eltd-listing-feat-list-holder-sizer "></div>';
+		if ($posts_array) {
+
+
+			foreach($posts_array as $listpost){
+				/*
+				$params['item_permalink'] = $this->getListingPermalink($feature_obj['post_object']->ID);
+						$params['item_title'] = $feature_obj['post_object']->post_title;
+						
+						//get image class and size 
+						$image_params = $this->getListingItemImageParams($feature_obj['post_object']->ID);					
+						
+						$params['item_layout_class'] = $image_params['layout_class']; 
+						$params['item_feature_image'] = $this->getListingFeatureImage($feature_obj['post_object']->ID, $image_params['thumb_size']);
+						 
+				*/
+				$params['item_permalink'] = get_permalink($listpost->ID);
+				$params['item_title'] = $listpost->post_title;
+				$params['item_layout_class'] = 'eltd-listing-feature-square'; 
+				$params['item_feature_image'] = get_the_post_thumbnail($listpost->ID, $image_size);
+				$html_out .= eltd_listing_get_shortcode_module_template_part('listing', 'listing-feature-item', '', $params);
 			
+				
+			}
+		} else {
+			$html_out .= "<-- No Featured Listings -->";
 		}
 		$html_out .= '</div>';
 		return ($html_out);
