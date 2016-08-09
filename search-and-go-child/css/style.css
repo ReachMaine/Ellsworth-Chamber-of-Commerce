@@ -127,6 +127,9 @@ ul.ecc_members_cats > li {
 .eltd-single-listing .eltd-listing-title-holder .eltd-listing-title-category {
   padding-left: 10px; }
 
+.eltd-listing-feat-list-holder article .eltd-listing-feat-title {
+  text-shadow: 2px 2px 1px black; }
+
 /****** end single listing ******/
 .eltd-blog-list .eltd-blog-list-item .eltd-item-info-section .eltd-post-info-author {
   display: none; }
