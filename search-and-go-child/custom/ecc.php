@@ -1,4 +1,15 @@
 <?php /* custom coding for theme  */
+// allow shortcodes in contact form 7....
+
+add_filter( 'wpcf7_form_elements', 'mycustom_wpcf7_form_elements' );
+function mycustom_wpcf7_form_elements( $form ) {
+	$form = do_shortcode( $form );
+
+	return $form;
+}
+
+
+// function for shortcode ecc_categories
 if (!function_exists('ecc_listing_categories_display')) {
 	function ecc_listing_categories_display( $atts ) {
 		$atts = shortcode_atts( array(
