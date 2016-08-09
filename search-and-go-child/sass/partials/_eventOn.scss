@@ -4,6 +4,18 @@
     	background-repeat: no-repeat;
     	background-size: contain;
    }
+
+   // carosel (on homepage) 
+ #homepage_carousel {
+ 	.eo_card_details_box { // dont show details on home page.
+ 		display: none;
+ 	}
+ }
+ #homepage_carousel-eoas-full-event-box {
+ 	p {
+ 		color: #F9F9F9;
+ 	}
+ }
  // event in list (ex: homepage)
 @media only screen and (min-width: 321px) { // everyone EXCEPT smallest phone
 .ajde_evcal_calendar:not(.boxy) {
