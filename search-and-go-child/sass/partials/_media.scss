@@ -1,3 +1,15 @@
 /* ----  Media Settings --------------------------------- */
 
+@media (max-width: 1024px) {
+	ul.ecc_members_cats ul.children li {
+		width: 49%;
+	}
+}
+
+@media (max-width: 480px) {
+	ul.ecc_members_cats ul.children li {
+		width: 100%;
+	}
+}
+
 /* end Media Settings ------------------------------------------ */
