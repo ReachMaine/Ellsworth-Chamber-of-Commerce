@@ -39,10 +39,6 @@ ul.ecc_members_cats > li {
     font-size: large; }
 
 /* end ecc ------------------------------------------ */
-/* tribe events styling */
-.ecs-event-list {
-  list-style-type: none; }
-
 .evcal_evdata_img {
   background-repeat: no-repeat;
   background-size: contain; }
@@ -56,6 +52,41 @@ ul.ecc_members_cats > li {
   .ajde_evcal_calendar:not(.boxy) #evcal_list.eventon_events_list .eventon_list_event .hasFtIMG .evcal_desc,
   .ajde_evcal_calendar:not(.boxy) #evcal_list.eventon_events_list .eventon_list_event a.sin_val.hasFtIMG .evcal_desc {
     padding-left: 170px; } }
+/* team member styling */
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.team-member {
+  width: 32%;
+  padding: 10px;
+  border: 1px solid #366897;
+  border-radius: 5px;
+  margin: 8px 0px; }
+  .team-member .member {
+    margin: 5px 0px;
+    text-align: center;
+    line-height: 30px; }
+  .team-member .role {
+    text-align: center;
+    line-height: 20px;
+    margin-bottom: 5px; }
+  .team-member .author-details {
+    margin: 0px; }
+
+.team-member figure {
+  margin: 0px 4px 0px 0px;
+  width: 100%;
+  text-align: center; }
+
+@media (max-width: 768px) {
+  .team-member figure {
+    width: 100%;
+    text-align: center; } }
+@media (max-width: 540px) {
+  .team-member {
+    width: 95%; } }
 /* =Theme customization starts here */
 /* HOMEPAGE */
 .eltd-logo-wrapper {
