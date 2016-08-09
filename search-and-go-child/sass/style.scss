@@ -111,11 +111,18 @@ $transparent_white: rgba(255, 255, 255, 0.9);
 
 ul.ecc_members_cats > li {
 	width: 100%;
+	border-radius: 5px;
 }
 
 ul.ecc_members_cats ul.children li {
 	width: 32%;
+	font-weight: bold;
 	float: left;
+}
+
+ul.ecc_members_cats > li > a {
+	color: #1ab5c1;
+	font-weight: bold;
 }
 
 /* menu */

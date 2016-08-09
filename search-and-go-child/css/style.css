@@ -142,11 +142,17 @@ ul.ecc_members_cats > li {
   text-align: center; }
 
 ul.ecc_members_cats > li {
-  width: 100%; }
+  width: 100%;
+  border-radius: 5px; }
 
 ul.ecc_members_cats ul.children li {
   width: 32%;
+  font-weight: bold;
   float: left; }
+
+ul.ecc_members_cats > li > a {
+  color: #1ab5c1;
+  font-weight: bold; }
 
 /* menu */
 .eltd-main-menu > ul > li > a > span.item_outer {
