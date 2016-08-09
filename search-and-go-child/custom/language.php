@@ -7,7 +7,7 @@
 			    switch ( $translated_text ) {
 
 		            case 'Category' :
-		                $translated_text = __( '',  $domain  );
+		                //$translated_text = __( '',  $domain  );
 		                break;
 		            case 'Previous post':
 		            	$translated_text = __( 'Previous',  $domain  );
