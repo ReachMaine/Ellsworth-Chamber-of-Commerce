@@ -274,7 +274,7 @@ function ecc_remove_menu_items() {
 
     	// still need to disable the Add New button on the top menu & the add new button on the CPT listing page.
 
-    	// Hide link on listing page
+    	// Hide (via css) Add New link on CPT listing page
 		if (isset($_GET['post_type']) && in_array($_GET['post_type'] , array( 'listing-type-item', 'listing-package')) ) {
 		    echo '<style type="text/css">
 		    .page-title-action { display:none; }
