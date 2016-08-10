@@ -1,6 +1,6 @@
 <?php /* mods
 * 10Aug16 zig - Mod sort params s.t. can only sort by name (remove date)
-*/
+*/ ?>
 <div class="eltd-listing-archive-adv-search-holder clearfix">
 <?php
 $type = isset($_GET['type']) ? $_GET['type'] : null;
