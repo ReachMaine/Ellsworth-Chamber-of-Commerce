@@ -163,6 +163,12 @@ ul.ecc_members_cats > li > a {
   color: #1ab5c1;
   font-weight: bold; }
 
+/* search page */
+.eltd-listing-list.eltd-advanced-search-holder .eltd-listing-archive-adv-search-holder .eltd-listing-archive-adv-search-count {
+  height: inherit; }
+.eltd-listing-list.eltd-advanced-search-holder .eltd-listing-list-item {
+  height: inherit; }
+
 /* menu */
 .eltd-main-menu > ul > li > a > span.item_outer {
   background-color: rgba(255, 255, 255, 0.9);

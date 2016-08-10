@@ -131,6 +131,16 @@ ul.ecc_members_cats > li > a {
 	font-weight: bold;
 }
 
+/* search page */
+.eltd-listing-list.eltd-advanced-search-holder {
+	.eltd-listing-archive-adv-search-holder .eltd-listing-archive-adv-search-count {
+		height: inherit;
+	}
+
+	.eltd-listing-list-item {
+		height: inherit;
+	}
+}
 /* menu */
 
 .eltd-main-menu>ul{
