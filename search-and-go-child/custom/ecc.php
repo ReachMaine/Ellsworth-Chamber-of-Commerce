@@ -259,3 +259,29 @@ add_shortcode( 'ecc_feat_list', 'ecc_listing_feat_list' );
 	}
 } */
 //add_action( 'pre_get_posts', 'order_cpt', 100); 
+
+
+/*  remove admin menu items for non-admin */
+function ecc_remove_menu_items() {
+    if( !current_user_can( 'administrator' ) ) {
+        remove_menu_page( 'edit.php?post_type=team-member' );
+    	remove_menu_page( 'edit.php?post_type=carousels' );
+    	remove_menu_page( 'edit.php?post_type=testimonials' );
+    	remove_menu_page( 'edit.php?post_type=listing-type-item' );
+		remove_menu_page( 'edit.php?post_type=listing-package' );
+		remove_menu_page( 'admin.php?page=vc-welcome' ); // this not working,
+    	// for contact form 7 has options in wp-config 
+
+    	// still need to disable the Add New button on the top menu & the add new button on the CPT listing page.
+
+    	// Hide link on listing page
+		if (isset($_GET['post_type']) && in_array($_GET['post_type'] , array( 'listing-type-item', 'listing-package')) ) {
+		    echo '<style type="text/css">
+		    .page-title-action { display:none; }
+		    </style>';
+		}
+    }
+}
+add_action( 'admin_menu', 'ecc_remove_menu_items' );
+
+
