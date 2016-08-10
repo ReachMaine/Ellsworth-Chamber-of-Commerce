@@ -21,7 +21,6 @@ else{
 	$sort_params = array(
 		/* zig 10Aug16 xout 'date-desc'   => esc_html('Date Desc', 'search_and_go'), 
 		'date-asc'    => esc_html('Date Asc', 'search_and_go'), */
-		'none' => '', /* zig, allows change function to trigger when select Name Asc */
 		'name-asc'    => esc_html('Name Asc', 'search_and_go'),
 		'name-desc'   => esc_html('Name Desc', 'search_and_go')
 		

@@ -238,7 +238,7 @@ function  ecc_listing_feat_list( $atts) {
 				
 			}
 		} else {
-			$html_out .= "<-- No Featured Listings -->";
+			$html_out .= "<!-- No Featured Listings -->";
 		}
 		$html_out .= '</div>';
 		return ($html_out);
@@ -247,14 +247,15 @@ function  ecc_listing_feat_list( $atts) {
 add_shortcode( 'ecc_feat_list', 'ecc_listing_feat_list' );
 
 /* trying to order the listings on the front end alphabetically to start (instead of by postdate) */
-function order_cpt( $query ) {
+/* not going to work this way because I THINK the listings are loaded via AJAX - 
+/* function order_cpt( $query ) {
 
 	if ( !is_admin() &&  $query->is_main_query() )  {
-		if ($query->is_post_type_archive('listing-item') /* ||  in_array ( $query->get('post_type'), array('listing-item') ) */ ) {
+		if ($query->is_post_type_archive('listing-item') ||  in_array ( $query->get('post_type'), array('listing-item') ) ) {
 			$query->set( 'orderby', 'post_title');
 			$query->set( 'order', 'ASC' );
-			return $query;
+			//return $query;
 		}
 	}
-}
-add_action( 'pre_get_posts', 'order_cpt', 100); 
+} */
+//add_action( 'pre_get_posts', 'order_cpt', 100); 

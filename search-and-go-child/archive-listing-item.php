@@ -104,7 +104,7 @@ get_header(); ?>
 					
 					<div class="eltd-listing-list-items">
 						<?php if ( $query->have_posts() ) {
-//echo "SQL-QUery for listings:  {$query->request}";
+//echo "SQL-QUery for listings:  {<pre>$query->request</pre>}";
 							while( $query->have_posts() ) {
 								$query->the_post();
 								search_and_go_elated_get_listing_list_item_template();
