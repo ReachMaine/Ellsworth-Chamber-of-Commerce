@@ -1,4 +1,7 @@
 <?php
+/* mods 
+*   8Aug16 zig  - add featured listings at top of page
+*/ 
 $params = array();
 
 //Type params
@@ -26,17 +29,21 @@ if ( $location ) {
 	$location = get_term_by( 'name', $location, 'listing-item-location' );
 	$params['location'] = $location->term_id;
 }
-
+$data_params = '';
+//categories need to be set in data params in order to get it via js and take ajax response(used for load more)
 $category = isset($_GET['category']) && $_GET['category'] !== '' ? $_GET['category'] : null;
 if ( $category ) {
 	$category = get_term_by( 'name', $category, 'listing-item-category' );
 	$params['category'] = $category->term_id;
+	$data_params = 'data-listing-category = '.esc_attr($category->term_id).' ';
 }
 
+//tags need to be set in data params in order to get it via js and take ajax response(used for load more)
 $tag = isset($_GET['item-tag']) && $_GET['item-tag'] !== '' ? $_GET['item-tag'] : null;
 if ( $tag ) {
 	$tag = get_term_by( 'name', $tag, 'listing-item-tag' );
 	$params['tag'] = $tag->term_id;
+	$data_params = 'data-listing-tag = '.esc_attr($tag->term_id).' ';
 }
 
 if(search_and_go_elated_options()->getOptionValue('listings_per_page') != ""){
@@ -47,8 +54,9 @@ if(search_and_go_elated_options()->getOptionValue('listings_per_page') != ""){
 $params['number'] = $listing_post_per_page;
 //Query
 $query = search_and_go_elated_query_listing_items($params);
-$data_params = '';
+
 $max_items = $query->found_posts;
+$max_num_pages = $query->max_num_pages;
 $paged = search_and_go_elated_paged();
 
 $data_params .= 'data-listing-next-page= '.esc_attr($paged + 1).' ';
@@ -56,7 +64,7 @@ $data_params .= 'data-listing-max-num-pages= '.esc_attr($max_items).' ';
 $data_params .= 'data-listing-number-per-page= '.esc_attr($listing_post_per_page).' ';
 
 $custom_class = 'eltd-listing-archive-load-more';
-if($max_items === 0){
+if($max_items === 0 || $max_num_pages <= $paged){
 	$custom_class .= ' eltd-hide-button';
 }
 $button_params = array(
@@ -82,34 +90,22 @@ get_header(); ?>
 						<?php echo search_and_go_elated_icon_collections()->renderIcon( 'icon-basic-magnifier-plus', 'linea_icons' ); ?>
 					</a>
 				</div>
-				<?php  echo search_and_go_elated_get_listing_multiple_map(); ?>
+				<?php echo search_and_go_elated_get_listing_multiple_map(); ?>
 			</div>
 			<div class="eltd-listing-list eltd-advanced-search-holder" <?php echo esc_attr($data_params)?>>
-				
 				<div class="eltd-listing-list-inner">
-					<?php if (is_archive()) { 
-					?> 
-<?php  /* echo do_shortcode('[eltd_listing_feat_list listing_feat_list_item_number="3" listing_feat_list_tax_number="3"]');*/ ?>	 
-						<?php /* <div class="ecc-featured-list-items"> */ ?>
-							<?php /* <h2 class="ecc-featured-list-title">Featured Members</h2> */ ?>
-							<?php 
+					<?php if (is_archive()) { // zig++
 								$feat_params = $params;
 								$feat_params['number'] = 4;
 								echo ecc_listing_feat_list($feat_params);
-							?>
-						<?php /* </div> */ ?>
-
-					<?php } /* zig - end archive */ ?>
+					} /* end archive zig-- */ ?>
 					<?php search_and_go_elated_get_advanced_search_html( $max_items); ?>
-					
 					<div class="eltd-listing-list-items">
 						<?php if ( $query->have_posts() ) {
-//echo "SQL-QUery for listings:  {<pre>$query->request</pre>}";
 							while( $query->have_posts() ) {
 								$query->the_post();
 								search_and_go_elated_get_listing_list_item_template();
 							}
-
 						} ?>
 					</div>
 					<div class="eltd-listing-load-more-button-holder">
