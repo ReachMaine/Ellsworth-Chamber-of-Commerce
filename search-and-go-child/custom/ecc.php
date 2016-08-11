@@ -269,9 +269,7 @@ function ecc_remove_menu_items() {
     	remove_menu_page( 'edit.php?post_type=testimonials' );
     	remove_menu_page( 'edit.php?post_type=listing-type-item' );
 		remove_menu_page( 'edit.php?post_type=listing-package' );
-		//remove_menu_page( 'admin.php?page=vc-welcome' ); // this not working,
-		//remove_menu_page('vc-general'); //vc
-		remove_menu_page('vc-welcome'); //vc
+		remove_menu_page('vc-welcome'); //vc on sidebar.
     	// for contact form 7 has options in wp-config 
 
     	// still need to disable the Add New button on the top menu & the add new button on the CPT listing page.
@@ -281,7 +279,7 @@ function ecc_remove_menu_items() {
     	echo '#wp-admin-bar-new-content { display: none;}'; // hide the 'add new' button in the admin bar.
     	// hide the 'Add New' button on CPT listing page
 		if (isset($_GET['post_type']) && in_array($_GET['post_type'] , array( 'listing-type-item', 'listing-package')) ) {
-		    echo 'page-title-action { display:none; }';
+		    echo '.page-title-action { display:none; }';
 		}
 		echo '</style>';
     }
