@@ -94,6 +94,12 @@ ul.ecc_members_cats > li {
   .team-member {
     width: 95%; } }
 /* =Theme customization starts here */
+/* **** header ***** */
+.eltd-position-right .widget_zlogin_widget {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle; }
+
 /* HOMEPAGE */
 .eltd-logo-wrapper {
   background-color: inherit !important; }

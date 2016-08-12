@@ -10,7 +10,7 @@ add_action('wp_enqueue_scripts', 'search_and_go_elated_child_theme_enqueue_scrip
 
 require_once(get_stylesheet_directory().'/custom/ecc.php'); 
 require_once(get_stylesheet_directory().'/custom/language.php'); 
-
+require_once(get_stylesheet_directory().'/custom/login-button-widget.php'); 
 
 
 /*****  change the login screen logo ****/

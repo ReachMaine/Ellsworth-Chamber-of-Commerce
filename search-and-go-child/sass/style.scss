@@ -19,6 +19,13 @@ Template: search-and-go
 
 $transparent_white: rgba(255, 255, 255, 0.9);
 
+
+/* **** header ***** */
+.eltd-position-right .widget_zlogin_widget {
+	display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
 /* HOMEPAGE */
 .eltd-logo-wrapper {
   	background-color: inherit !important; 
