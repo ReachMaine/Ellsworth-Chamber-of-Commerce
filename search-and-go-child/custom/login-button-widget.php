@@ -15,25 +15,30 @@ class zlogin_widget extends WP_Widget {
     function widget($args, $instance) {	
         extract( $args );
         $title 		= apply_filters('widget_title', $instance['title']);
-        $message 	= $instance['message'];
+        if ($instance['message']) {
+           $message  = $instance['message'];
+        } else {
+          $message = 'Sign In';
+        }
+        
         ?>
-              <?php echo $before_widget; ?>
-                  <?php if ( $title )
-                        echo $before_title . $title . $after_title; ?>
+        <?php echo $before_widget; ?>
+        <?php if ( $title )
+              echo $before_title . $title . $after_title; ?>
 
 
           <?php global $user_ID;
             global $current_user;
             get_currentuserinfo();
             if('' == $user_ID){   
-              //echo "Not Logged in";
-              echo do_shortcode('[eltd_button size="medium" type="outline" text="Sign In" custom_class="" icon_pack="font_awesome" fa_icon="" link="'.wp_login_url().'" target="_self" ]');
-              /* echo '<a href="'.get_bloginfo('url').'/wp-admin/" class="eltd-mobile-login-icon eltd-login-opener">' . search_and_go_elated_icon_collections()->renderIcon( 'lnr-users', 'linear_icons' ).'</a>'; */
+              //use shortcode as easiest way to style button
+              echo do_shortcode('[eltd_button size="medium" type="outline" text="'.$message.'" custom_class="" icon_pack="font_awesome" fa_icon="" link="'.wp_login_url().'" target="_self" ]');
+            
             } else { ?>
               <div class="eltd-logged-in-user">
                 <span>
                 <?php 
-                //echo $current_user->display_name;
+                // show username inside button 
                  echo do_shortcode('[eltd_button size="medium" type="outline" text="'.$current_user->display_name.'" custom_class="" icon_pack="font_awesome" fa_icon="" link="'.(wp_logout_url( $_SERVER["REQUEST_URI"] )).'" target="_self" ]');
                   ?>
                 </span>
@@ -64,7 +69,7 @@ class zlogin_widget extends WP_Widget {
           <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo $title; ?>" />
         </p>
 		<p>
-          <label for="<?php echo $this->get_field_id('message'); ?>"><?php _e('Simple Message'); ?></label> 
+          <label for="<?php echo $this->get_field_id('message'); ?>"><?php _e('Button Text (defaults Sign In)'); ?></label> 
           <input class="widefat" id="<?php echo $this->get_field_id('message'); ?>" name="<?php echo $this->get_field_name('message'); ?>" type="text" value="<?php echo $message; ?>" />
         </p>
         <?php 
