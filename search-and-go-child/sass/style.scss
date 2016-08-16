@@ -108,6 +108,12 @@ $transparent_white: rgba(255, 255, 255, 0.9);
 			width: 20%;
 			background-size: contain;
 		}
+		.eltd-listing-item-content {
+			.eltd-listing-item-category-icons:after {
+				// hide the "/" after the categories
+				content: "";
+			}
+		}
 	}
 }
 // box style archive

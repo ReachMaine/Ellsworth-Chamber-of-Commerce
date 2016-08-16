@@ -150,6 +150,8 @@ ul.ecc_members_cats > li {
 .eltd-listing-list-items .eltd-listing-list-item .eltd-listing-item-image {
   width: 20%;
   background-size: contain; }
+.eltd-listing-list-items .eltd-listing-list-item .eltd-listing-item-content .eltd-listing-item-category-icons:after {
+  content: ""; }
 
 .eltd-blog-list-holder.eltd-boxes .eltd-item-text-holder {
   padding-top: 0px; }
