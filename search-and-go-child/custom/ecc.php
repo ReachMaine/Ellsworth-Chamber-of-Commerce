@@ -165,7 +165,7 @@ function  ecc_listing_feat_list( $atts) {
 		
 
 		$post_args = array(
-			'posts_per_page' => $number,
+			'posts_per_page' => -1,
 			'meta_query' 	=> 	$meta_query,
 			//'meta_key'         => 'eltd_listing_feature_item',
 			//'meta_value'       => 'yes',
@@ -216,8 +216,11 @@ function  ecc_listing_feat_list( $atts) {
 		$html_out .= '<div class = "eltd-listing-feat-list-holder-sizer "></div>';
 		if ($posts_array) {
 
-
+			$i = 0;
 			foreach($posts_array as $listpost){
+			//for  ($i = 0; $i<$number; $i++) {
+
+				if ($i < $number) {
 				/*
 				$params['item_permalink'] = $this->getListingPermalink($feature_obj['post_object']->ID);
 						$params['item_title'] = $feature_obj['post_object']->post_title;
@@ -229,14 +232,15 @@ function  ecc_listing_feat_list( $atts) {
 						$params['item_feature_image'] = $this->getListingFeatureImage($feature_obj['post_object']->ID, $image_params['thumb_size']);
 						 
 				*/
-				$params['item_permalink'] = get_permalink($listpost->ID);
-				$params['item_title'] = $listpost->post_title;
-				$params['item_layout_class'] = 'eltd-listing-feature-square'; 
-				$params['item_feature_image'] = get_the_post_thumbnail($listpost->ID, $image_size);
-				$html_out .= eltd_listing_get_shortcode_module_template_part('listing', 'listing-feature-item', '', $params);
+					$params['item_permalink'] = get_permalink($listpost->ID);
+					$params['item_title'] = $listpost->post_title;
+					$params['item_layout_class'] = 'eltd-listing-feature-square'; 
+					$params['item_feature_image'] = get_the_post_thumbnail($listpost->ID, $image_size);
+					$html_out .= eltd_listing_get_shortcode_module_template_part('listing', 'listing-feature-item', '', $params);
 			
-				
-			}
+				} // end if
+				$i++;
+			} // end for
 		} else {
 			$html_out .= "<!-- No Featured Listings -->";
 		}
