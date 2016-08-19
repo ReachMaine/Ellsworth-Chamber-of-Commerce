@@ -1,5 +1,7 @@
 <?php /* custom coding for dashboard  */
-
+/* 
+*  19Aug16 zig - take out add new listing from menu & dashboard 
+*/
 remove_action( 'search_and_go_elated_dashboard_menu_items', 'eltd_listing_generate_dashboard_menu_items' );
 remove_action( 'search_and_go_elated_login_dropdown_menu_items', 'eltd_listing_generate_dashboard_menu_items' );
 add_action ('search_and_go_elated_login_dropdown_menu_items','ecc_dashboard_dropdown_menu');
@@ -34,14 +36,14 @@ function ecc_dashboard_dropdown_menu() {
 		$html .= '<a href="' . esc_url(add_query_arg( array('user-action' => 'edit_profile'), $dashboard_url )) . '">' . esc_html__('Edit Profile', 'eltd_listing') . '</a>';
 		$html .= '</li>';
 
-		if($action == 'add_new_listing'){
+		/* if($action == 'add_new_listing'){
 			$html .= '<li class="'.$active_class.'">';
 		}else{
 			$html .= '<li>';
 		}
 		$html .= '<span class="eltd-dashboard-menu-icon lnr lnr-file-add"></span>';
 		$html .= '<a href="' . esc_url(add_query_arg( array('user-action' => 'add_new_listing'), $dashboard_url )) . '">' . esc_html__('Submit New Listing', 'eltd_listing') . '</a>';
-		$html .= '</li>';
+		$html .= '</li>'; */
 
 		if($action == 'listings'){
 			$html .= '<li class="'.$active_class.'">';

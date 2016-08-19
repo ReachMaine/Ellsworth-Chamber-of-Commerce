@@ -154,6 +154,19 @@ ul.ecc_members_cats > li > a {
 		height: inherit;
 	}
 }
+/* user dashboard */
+.eltd-listing-dashboard-holder-inner  {
+	.eltd-listing-empty-listings-holder {
+		a {
+			display: none;
+		}
+	}
+	.evcal_btn.evoau, 
+	.evoau_submission_form.loginneeded .evcal_btn {
+		display: none;
+	}
+}
+
 /* menu */
 
 .eltd-main-menu>ul{

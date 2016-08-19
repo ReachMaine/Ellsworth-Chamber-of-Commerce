@@ -177,6 +177,13 @@ ul.ecc_members_cats > li > a {
 .eltd-listing-list.eltd-advanced-search-holder .eltd-listing-list-item {
   height: inherit; }
 
+/* user dashboard */
+.eltd-listing-dashboard-holder-inner .eltd-listing-empty-listings-holder a {
+  display: none; }
+.eltd-listing-dashboard-holder-inner .evcal_btn.evoau,
+.eltd-listing-dashboard-holder-inner .evoau_submission_form.loginneeded .evcal_btn {
+  display: none; }
+
 /* menu */
 .eltd-main-menu > ul > li > a > span.item_outer {
   background-color: rgba(255, 255, 255, 0.9);
