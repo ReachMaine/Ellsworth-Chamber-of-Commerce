@@ -28,4 +28,25 @@ ul.ecc_members_cats {
 // li.current-cat { ... }
 // li.current-cat-parent { ... }
 // ul.children { ... }
+
+// styling for ecc_featured_list short code 
+// stacked template
+.eltd-listing-feat-list-holder.ecc-stacked article {
+	width: 100%;
+	.eltd-listing-feat-listing-item-inner {
+		.eltd-listing-feat-image-holder {
+			text-align: center;
+		}
+		.eltd-listing-feat-title-wrapper {
+			.eltd-listing-feat-title {
+				text-align: center;
+				margin-top: 0px;
+				//color: #fff;
+				//text-shadow: 2px 2px 1px black;
+			}
+		}
+		
+	}
+}
+
 /* end ecc ------------------------------------------ */

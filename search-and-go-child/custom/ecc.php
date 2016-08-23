@@ -133,6 +133,7 @@ function  ecc_listing_feat_list( $atts) {
 			'location' => '',
 			'category' => '',
 			'number' => "4", 
+			'template' => 'default',
 		);
 		$html_out = "";
 
@@ -212,8 +213,13 @@ function  ecc_listing_feat_list( $atts) {
 //echo "Posts <pre>"; var_dump($posts_array); echo "</pre>";
 //echo "Posts count: <pre>"; echo count($posts_array); echo "</pre><br>";		
 
-		$html_out .= '<div class = "eltd-listing-feat-list-holder ecc-box">';
-		$html_out .= '<div class = "eltd-listing-feat-list-holder-sizer "></div>';
+		//$html_out .= '<div class = "eltd-listing-feat-list-holder ecc-box ecc-'.$template.'">';
+		if ($template == 'default') {
+			$html_out .= '<div class = "eltd-listing-feat-list-holder ecc-box ecc-'.$template.'">';
+			$html_out .= '<div class = "eltd-listing-feat-list-holder-sizer "></div>';
+		} else {
+			$html_out .= '<div class = "ecc-listing-feat-list-holder ecc-box ecc-'.$template.'">';
+		}
 		if ($posts_array) {
 
 			$i = 0;
