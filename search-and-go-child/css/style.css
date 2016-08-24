@@ -151,6 +151,13 @@ ul.ecc_members_cats > li {
   background-size: contain; }
 .eltd-single-listing .eltd-listing-title-holder .eltd-listing-title-category {
   padding-left: 10px; }
+.eltd-single-listing .eltd-single-listing-inner .eltd-listing-single-map-holder .eltd-listing-map-address {
+  width: inherit;
+  max-width: 90%;
+  padding-left: 10px;
+  padding-right: 10px; }
+  .eltd-single-listing .eltd-single-listing-inner .eltd-listing-single-map-holder .eltd-listing-map-address p {
+    color: #efefef; }
 
 .eltd-listing-feat-list-holder article .eltd-listing-feat-title {
   text-shadow: 2px 2px 1px black; }
