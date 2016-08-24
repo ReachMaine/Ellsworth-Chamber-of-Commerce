@@ -243,6 +243,10 @@ function  ecc_listing_feat_list( $atts) {
 						$params['item_feature_image'] = $this->getListingFeatureImage($feature_obj['post_object']->ID, $image_params['thumb_size']);
 						 
 				*/
+					if ($template == 'stacked') {
+						$image_size = array( 150, 150) ;
+					}	
+
 					$params['item_permalink'] = get_permalink($listpost->ID);
 					$params['item_title'] = $listpost->post_title;
 					$params['item_layout_class'] = 'eltd-listing-feature-square'; 
