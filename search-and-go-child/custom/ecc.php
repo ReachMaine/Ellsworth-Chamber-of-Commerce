@@ -134,6 +134,7 @@ function  ecc_listing_feat_list( $atts) {
 			'category' => '',
 			'number' => "4", 
 			'template' => 'default',
+			'title' => '',
 		);
 		$html_out = "";
 
@@ -214,14 +215,18 @@ function  ecc_listing_feat_list( $atts) {
 //echo "Posts count: <pre>"; echo count($posts_array); echo "</pre><br>";		
 
 		//$html_out .= '<div class = "eltd-listing-feat-list-holder ecc-box ecc-'.$template.'">';
-		if ($template == 'default') {
-			$html_out .= '<div class = "eltd-listing-feat-list-holder ecc-box ecc-'.$template.'">';
-			$html_out .= '<div class = "eltd-listing-feat-list-holder-sizer "></div>';
-		} else {
-			$html_out .= '<div class = "ecc-listing-feat-list-holder ecc-box ecc-'.$template.'">';
-		}
+		
 		if ($posts_array) {
-
+			
+			if ($template == 'default') {
+				$html_out .= '<div class = "eltd-listing-feat-list-holder ecc-box ecc-'.$template.'">';
+				$html_out .= '<div class = "eltd-listing-feat-list-holder-sizer "></div>';
+			} else {
+				$html_out .= '<div class = "ecc-listing-feat-list-holder ecc-box ecc-'.$template.'">';
+			}
+			if ($title != "") {
+				$html_out .= '<h4 class="ecc-listing-feat-heading">'.$title.'</h4>';
+			}
 			$i = 0;
 			foreach($posts_array as $listpost){
 			//for  ($i = 0; $i<$number; $i++) {
@@ -247,10 +252,11 @@ function  ecc_listing_feat_list( $atts) {
 				} // end if
 				$i++;
 			} // end for
+			$html_out .= '</div>';
 		} else {
 			$html_out .= "<!-- No Featured Listings -->";
 		}
-		$html_out .= '</div>';
+		
 		return ($html_out);
 		
 }

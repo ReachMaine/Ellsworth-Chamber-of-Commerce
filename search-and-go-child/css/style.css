@@ -38,6 +38,19 @@ ul.ecc_members_cats > li {
     color: orange;
     font-size: large; }
 
+.ecc-listing-feat-list-holder.ecc-stacked article {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+  .ecc-listing-feat-list-holder.ecc-stacked article .eltd-listing-feat-listing-item-inner .eltd-listing-feat-image-holder {
+    text-align: center; }
+  .ecc-listing-feat-list-holder.ecc-stacked article .eltd-listing-feat-listing-item-inner .eltd-listing-feat-title-wrapper .eltd-listing-feat-title {
+    text-align: center;
+    margin-top: 0px;
+    font-size: 1.1em; }
+.ecc-listing-feat-list-holder.ecc-stacked .ecc-listing-feat-heading {
+  text-align: center; }
+
 /* end ecc ------------------------------------------ */
 .evcal_evdata_img {
   background-repeat: no-repeat;
@@ -176,6 +189,13 @@ ul.ecc_members_cats > li > a {
   height: inherit; }
 .eltd-listing-list.eltd-advanced-search-holder .eltd-listing-list-item {
   height: inherit; }
+
+/* user dashboard */
+.eltd-listing-dashboard-holder-inner .eltd-listing-empty-listings-holder a {
+  display: none; }
+.eltd-listing-dashboard-holder-inner .evcal_btn.evoau,
+.eltd-listing-dashboard-holder-inner .evoau_submission_form.loginneeded .evcal_btn {
+  display: none; }
 
 /* menu */
 .eltd-main-menu > ul > li > a > span.item_outer {
