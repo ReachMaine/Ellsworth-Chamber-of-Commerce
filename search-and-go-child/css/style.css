@@ -1,4 +1,3 @@
-@import url("../search-and-go/style.css");
 /*
 Theme Name: Ellsworth Chamber Search and Go
 Theme URI: http://searchandgo.elated-themes.com
@@ -7,6 +6,7 @@ Author:  Reach Maine
 Version: 1.0.0
 Template: search-and-go
 */
+@import url("../search-and-go/style.css");
 /* Colors ---------------------------------------------- */
 /* Typography ------------------------------------------ */
 /* General */
@@ -117,8 +117,8 @@ ul.ecc_members_cats > li {
 .eltd-logo-wrapper {
   background-color: inherit !important; }
   .eltd-logo-wrapper a img {
-    -webkit-filter: drop-shadow(3px 3px 5px #333333);
-    filter: drop-shadow(3px 3px 5px #333333); }
+    -webkit-filter: drop-shadow(3px 3px 5px #333);
+    filter: drop-shadow(3px 3px 5px #333); }
 
 /* Circular type buttons on homepage */
 .eltd-listing-search-holder .eltd-listing-search-categories-holder .eltd-listing-search-category-link {
@@ -241,4 +241,7 @@ ul.ecc_members_cats > li > a {
 @media (max-width: 480px) {
   ul.ecc_members_cats ul.children li {
     width: 100%; } }
+@media (min-width: 481px) {
+  .car-show-sponsors {
+    column-count: 3; } }
 /* end Media Settings ------------------------------------------ */
