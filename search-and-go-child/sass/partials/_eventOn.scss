@@ -7,9 +7,17 @@
 
    // carosel (on homepage) 
  #homepage_carousel {
- 	.eo_card_details_box { // dont show details on home page.
- 		display: none;
- 	}
+ 	.eo_card_box {
+ 		.eo_card_img {
+ 			background-position: initial;
+    		background-size: contain;
+    		background-repeat: no-repeat;
+ 		}
+ 		.eo_card_details_box { // dont show details on home page.
+	 		display: none;
+	 	}
+	}
+ 	
  }
  #homepage_carousel-eoas-full-event-box {
  	p {
