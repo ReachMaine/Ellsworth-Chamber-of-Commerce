@@ -46,6 +46,7 @@ $transparent_white: rgba(255, 255, 255, 0.9);
 	border-radius: 5px;
 }
 
+
 .eltd-listing-search-holder .eltd-listing-search-categories-holder .eltd-listing-search-category-link {
 	.eltd-listing-search-category-link-inner-holder .eltd-listing-search-category-title {
 	font-size: 15px;
@@ -96,9 +97,30 @@ $transparent_white: rgba(255, 255, 255, 0.9);
 	}
 	
 }
+// featured listings on home page.
+.eltd-listing-feat-list-holder article {
+	.eltd-listing-feat-listing-item-inner {
+		text-align: center;
+		background-color: white;
+		border: 1px solid #e0e0e0;
+		.eltd-listing-feat-image-holder {
+			img {
+				height: initial!important;
+			}
+		}
+		.eltd-listing-feat-title-wrapper {
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,757575+100&0+0,1+100 */
+			background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(117,117,117,1) 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(117,117,117,1) 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(117,117,117,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			//filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#757575',GradientType=0 ); /* IE6-9 */
 
-.eltd-listing-feat-list-holder article .eltd-listing-feat-title {
-	text-shadow: 2px 2px 1px black;
+			.eltd-listing-feat-title {
+				//text-shadow: 2px 2px 1px black;
+			}
+		}
+		
+	}
 }
 
 

@@ -63,6 +63,8 @@ ul.ecc_members_cats > li {
 #homepage_carousel .eo_card_box .eo_card_details_box {
   display: none; }
 
+#homepage_carousel-eoas-full-event-box .eoas_evcal_evdata_img {
+  height: 0px !important; }
 #homepage_carousel-eoas-full-event-box p {
   color: #F9F9F9; }
 
@@ -163,8 +165,20 @@ ul.ecc_members_cats > li {
   .eltd-single-listing .eltd-single-listing-inner .eltd-listing-single-map-holder .eltd-listing-map-address p {
     color: #efefef; }
 
-.eltd-listing-feat-list-holder article .eltd-listing-feat-title {
-  text-shadow: 2px 2px 1px black; }
+.eltd-listing-feat-list-holder article .eltd-listing-feat-listing-item-inner {
+  text-align: center;
+  background-color: white;
+  border: 1px solid #e0e0e0; }
+  .eltd-listing-feat-list-holder article .eltd-listing-feat-listing-item-inner .eltd-listing-feat-image-holder img {
+    height: initial !important; }
+  .eltd-listing-feat-list-holder article .eltd-listing-feat-listing-item-inner .eltd-listing-feat-title-wrapper {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,757575+100&0+0,1+100 */
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #757575 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #757575 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #757575 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
 
 /****** end single listing ******/
 .eltd-blog-list .eltd-blog-list-item .eltd-item-info-section .eltd-post-info-author {

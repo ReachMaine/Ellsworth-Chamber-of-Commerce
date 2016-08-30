@@ -19,7 +19,11 @@
 	}
  	
  }
+ // lightbox event from homepage carousel.
  #homepage_carousel-eoas-full-event-box {
+ 	.eoas_evcal_evdata_img {
+ 		height: 0px!important;
+ 	}
  	p {
  		color: #F9F9F9;
  	}
