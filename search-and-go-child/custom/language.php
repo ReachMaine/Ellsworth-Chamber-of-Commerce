@@ -6,8 +6,8 @@
 			 /* if ( is_singular() ) { */
 			    switch ( $translated_text ) {
 
-		            case 'Category' :
-		                //$translated_text = __( '',  $domain  );
+		            case 'Call us anytime' :
+		                $translated_text = __( 'Call us',  $domain  );
 		                break;
 		            case 'Previous post':
 		            	$translated_text = __( 'Previous',  $domain  );
