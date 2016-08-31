@@ -26,6 +26,17 @@ $transparent_white: rgba(255, 255, 255, 0.9);
     position: relative;
     vertical-align: middle;
 }
+
+/* FOOTER */
+
+.eltd-footer-inner .textwidget {
+	color: white;
+}
+
+footer .eltd-footer-inner {
+	background-color: rgba(36, 36, 36, .45);
+}
+
 /* HOMEPAGE */
 .eltd-logo-wrapper {
   	background-color: inherit !important; 
