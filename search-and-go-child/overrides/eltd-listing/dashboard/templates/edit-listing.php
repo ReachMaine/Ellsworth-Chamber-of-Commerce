@@ -244,14 +244,29 @@
 
 					<div id="map" style="min-height: 300px;"></div>
 				</div>
+				<?php /* zig show type as field -  non-editiable */ ?>
+				<div class="eltd-new-listing-item">
+					<label for="eltd-listing-type" class="eltd-label-with-margin">
+						<?php esc_html_e( 'Listing Category', 'eltd_listing' ); ?>
+					</label>
+
+					<div class="eltd-profile-input" class="eltd-label-with-margin">
+						<input type="text" id="eltd-input-type" class="eltd-input-field"
+						       name="eltd_listing_type"
+						       value="<?php echo get_the_title(eltd_listing_check_listing_fields_values( $listing_ID, 'eltd_listing_item_type' )); ?>"
+						       placeholder="<?php echo esc_attr( 'e.g London', 'eltd_listing' ) ?>" 
+						       readonly="readonly"  />
+					</div>
+				</div>
+				<?php /* zig - done */ ?>	
 				<?php 
 				
-				eltd_listing_listing_types( $listing_ID ); // display fields based on "type"
+				eltd_listing_listing_types( $listing_ID ); 
 				/* zig xout   dont show package level
 				$package_id = get_post_meta( $listing_ID, 'eltd_listing_package', true );
 				eltd_listing_listing_packages( $package_id );
-				*/
-				?>
+				*/ ?>
+				
 				<div class="eltd-listing-submit-holder">
 					<input type="hidden" value="<?php echo esc_attr( $listing_ID ); ?>" name="post_id"/>
 					<?php
@@ -268,7 +283,6 @@
 					?>
 					<?php wp_nonce_field( 'eltd-ajax-edit-listing-nonce', 'eltd-edit-listing-security' ); ?>
 				</div>
-
 			</div>
 		</div>
 	</form>
