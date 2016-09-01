@@ -18,6 +18,9 @@
 		            case 'Your wishlist is empty.':
 		            	$translated_text = __( '',  $domain  );
 		            	break;
+		            case 'Specification':
+		            	$translated_text = __( 'Description',  $domain  );
+		            	break;
 		            /* case 'Share this post:':
 		            	$translated_text = __('Share', ' $domain );
 		            	break; */
