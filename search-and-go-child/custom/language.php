@@ -15,6 +15,9 @@
 		            case 'Next post':
 		            	$translated_text = __( 'Next',  $domain  );
 		            	break;
+		            case 'Your wishlist is empty.':
+		            	$translated_text = __( '',  $domain  );
+		            	break;
 		            /* case 'Share this post:':
 		            	$translated_text = __('Share', ' $domain );
 		            	break; */
