@@ -14,10 +14,10 @@
 	$pkg = get_post_meta($listing_ID, 'eltd_listing_package', true);
 	if ( in_array($pkg, array(106) ) ) {
 		$prem = true;
-		echo "<p>premium</p>";
+		echo "<!-- premium -->";
 	} else {
 		$prem = false;
-		echo "<p>regular</p>";
+		echo "<!--regular-->";
 	}
 ?>
 
