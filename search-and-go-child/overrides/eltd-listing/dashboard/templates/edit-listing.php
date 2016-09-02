@@ -244,8 +244,9 @@
 
 					<div id="map" style="min-height: 300px;"></div>
 				</div>
-				<?php /* zig show type as field -  non-editiable */ ?>
-				<div class="eltd-new-listing-item">
+				<?php /* zig show type as field -  non-editiable - works, but if take out following function, 
+					   * list_type options dont show.  not sure why */
+				/* <div class="eltd-new-listing-item">
 					<label for="eltd-listing-type" class="eltd-label-with-margin">
 						<?php esc_html_e( 'Listing Category', 'eltd_listing' ); ?>
 					</label>
@@ -258,7 +259,7 @@
 						       readonly="readonly"  />
 					</div>
 				</div>
-				<?php /* zig - done */ ?>	
+				 */ ?>	
 				<?php 
 				
 				eltd_listing_listing_types( $listing_ID ); 
