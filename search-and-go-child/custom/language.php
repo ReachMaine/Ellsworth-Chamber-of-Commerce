@@ -19,8 +19,8 @@
 		            	$translated_text = __( '',  $domain  );
 		            	break;
 		            case 'Specification':
-		            	$translated_text = __( 'Description',  $domain  );
-		            	break;
+		            	$translated_text = __( '',  $domain  );
+		            	break; 
 		            /* case 'Share this post:':
 		            	$translated_text = __('Share', ' $domain );
 		            	break; */
