@@ -28,6 +28,20 @@
  		color: #F9F9F9;
  	}
  }
+ // in calendar 
+ .ajde_evcal_calendar {
+ 	#evcal_list.eventon_events_list  {
+	 	.eventon_list_event.event {
+	 		.evo_card_organizer_name_t a:after {
+	 			content: " (website) ";
+	 			color: #1ab5c1;
+	 			font-size: smaller;
+	 			padding-left: 10px;
+	 		}
+	 	}
+	}
+ }
+ 
  // event in list (ex: homepage)
 @media only screen and (min-width: 321px) { // everyone EXCEPT smallest phone
 .ajde_evcal_calendar:not(.boxy) {
