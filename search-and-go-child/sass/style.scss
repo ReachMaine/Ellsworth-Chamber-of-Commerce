@@ -73,7 +73,7 @@ footer .eltd-footer-inner {
 /****** single listing ******/
 //header image 
 .eltd-title .eltd-title-image img {
-	width: inherit;
+	//width: inherit; commenting out to see if the header image scaling works better than cutting off left and right.
 	max-width: initial;
 }
 .eltd-title.eltd-has-background {
