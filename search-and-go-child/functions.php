@@ -37,3 +37,5 @@ require_once(get_stylesheet_directory().'/custom/dashboard.php');
 	function reach_scripts() {
 			wp_deregister_script( 'eltd-ui-admin' ); //remove offending js for events conflict - 
 	}
+
+	remove_filter('pre_term_description', 'wp_filter_kses');
