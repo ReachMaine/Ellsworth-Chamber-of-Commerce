@@ -1,6 +1,7 @@
 <?php /*
 * 30Jun16 zig - add thumbnail to beginning of title row. 
 * 21Jul16 zig - format image similar to archive.
+*  13Sept zig - remove category icons
 */ ?>
 <?php
 $categories   = wp_get_post_terms(get_the_ID(), 'listing-item-category');
@@ -26,7 +27,7 @@ $categories   = wp_get_post_terms(get_the_ID(), 'listing-item-category');
 		<?php
 		//search_and_go_elated_listing_get_info_part('wishlist');//Different wishlist button html for single item
 		search_and_go_elated_listing_get_info_part('rating');
-		search_and_go_elated_listing_get_info_part('category-icons');
+		/* zig xout 13Sept16 search_and_go_elated_listing_get_info_part('category-icons'); */
 		?>
 	</div>
 </div>
