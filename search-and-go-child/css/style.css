@@ -139,6 +139,12 @@ footer .eltd-footer-inner {
     -webkit-filter: drop-shadow(3px 3px 5px #333);
     filter: drop-shadow(3px 3px 5px #333); }
 
+.eltd-blog-list-item-inner {
+  padding: 13px;
+  background-color: #f5f5f5;
+  border-radius: 7px;
+  border: 2px solid #d6d6d6; }
+
 /* Circular type buttons on homepage */
 .eltd-listing-search-holder .eltd-listing-search-categories-holder .eltd-listing-search-category-link {
   background-color: rgba(0, 0, 0, 0.7); }
