@@ -273,6 +273,15 @@ ul.ecc_members_cats > li > a {
 	padding: 15px;
 	}
 }
-
+/* footer */
+.reach-logo {
+	color: white;
+}
+.reach-logo:hover {
+	color: #15708e;
+}
+.reach-logo:before {
+	content: url("images/reach-favicon.png");
+}
 
 @import "partials/media"; // keep at end of of file 

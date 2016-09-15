@@ -16,6 +16,11 @@
  		.eo_card_details_box { // dont show details on home page.
 	 		display: none;
 	 	}
+	 	.eo_card_downbox {
+	 		.eo_card_sotitle {
+	 			text-transform: capitalize;
+	 		}
+	 	}
 	}
  	
  }
