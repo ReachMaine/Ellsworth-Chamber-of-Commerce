@@ -245,12 +245,15 @@ function  ecc_listing_feat_list( $atts) {
 				*/
 					if ($template == 'stacked') {
 						$image_size = array( 150, 150) ;
+					} else {
+						$image_size = array(300,300);
 					}	
 
 					$params['item_permalink'] = get_permalink($listpost->ID);
 					$params['item_title'] = $listpost->post_title;
 					$params['item_layout_class'] = 'eltd-listing-feature-square'; 
 					$params['item_feature_image'] = get_the_post_thumbnail($listpost->ID, $image_size);
+					$params['category_icon_array'] = '';
 					$html_out .= eltd_listing_get_shortcode_module_template_part('listing', 'listing-feature-item', '', $params);
 			
 				} // end if
