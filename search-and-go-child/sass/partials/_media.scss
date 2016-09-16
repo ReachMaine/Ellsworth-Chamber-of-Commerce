@@ -11,10 +11,18 @@
 	.ecc-top-phone {
 		display:block;
 	}
+
+	h1 {
+		font-size: 22px; //Smaller H1s on mobile devices
+	}
 }
 
 @media (max-width: 480px) {
 	ul.ecc_members_cats ul.children li {
+		width: 100%;
+	}
+
+	img.alignright, img.alignleft {
 		width: 100%;
 	}
 }
