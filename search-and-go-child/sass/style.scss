@@ -21,6 +21,16 @@ $transparent_white: rgba(255, 255, 255, 0.9);
 
 
 /* **** header ***** */
+.ecc-top-phone {
+	display: none; // displayed at 600 px in _media.scss
+	background-color: black;
+	text-align:center;
+	font-size: 18px;
+	line-height:30px;
+	a {
+		color: white;
+	}
+}
 .eltd-position-right .widget_zlogin_widget {
 	display: inline-block;
     position: relative;

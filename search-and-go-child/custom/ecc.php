@@ -283,4 +283,10 @@ add_shortcode( 'ecc_feat_list', 'ecc_listing_feat_list' );
 } */
 //add_action( 'pre_get_posts', 'order_cpt', 100); 
 
-
+/* use action to put phone number at top on mobile */
+add_action('search_and_go_elated_after_header_top', 'ecc_top_bar');
+function ecc_top_bar() {
+	$html_out = "";
+	$html_out .= '<div class="ecc-top-phone"><a href="tel:207-667-5584"><i class="eltd-icon-font-awesome fa fa-phone"></i> 207-667-5584</a></div>';
+	echo $html_out;
+}

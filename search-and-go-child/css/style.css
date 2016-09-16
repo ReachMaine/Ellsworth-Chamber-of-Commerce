@@ -122,6 +122,15 @@ ul.ecc_members_cats > li {
     width: 95%; } }
 /* =Theme customization starts here */
 /* **** header ***** */
+.ecc-top-phone {
+  display: none;
+  background-color: black;
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px; }
+  .ecc-top-phone a {
+    color: white; }
+
 .eltd-position-right .widget_zlogin_widget {
   display: inline-block;
   position: relative;
@@ -293,6 +302,9 @@ ul.ecc_members_cats > li > a {
 @media (max-width: 1024px) {
   ul.ecc_members_cats ul.children li {
     width: 49%; } }
+@media only screen and (max-width: 600px) {
+  .ecc-top-phone {
+    display: block; } }
 @media (max-width: 480px) {
   ul.ecc_members_cats ul.children li {
     width: 100%; } }

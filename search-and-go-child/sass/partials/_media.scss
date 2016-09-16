@@ -5,6 +5,13 @@
 		width: 49%;
 	}
 }
+@media only screen and (max-width: 600px) {// point at which top bar hides
+
+	// show phone nubmer at top (inplace of top bar)
+	.ecc-top-phone {
+		display:block;
+	}
+}
 
 @media (max-width: 480px) {
 	ul.ecc_members_cats ul.children li {
