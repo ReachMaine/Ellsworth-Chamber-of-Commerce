@@ -160,6 +160,15 @@ footer .eltd-footer-inner {
   line-height: 20px;
   padding: 7px 0px; }
 
+.eltd-listing-feat-list-holder article.eltd-listing-feat-listing-item .eltd-listing-feat-title-wrapper, .eltd-listing-item-related-holder .eltd-listing-related-image-holder .eltd-listing-related-title-holder {
+  background-color: rgba(0, 0, 0, 0.7); }
+
+.eltd-listing-feat-list-holder article.eltd-listing-feat-listing-item .eltd-listing-feat-title-wrapper {
+  padding: 5px 10px; }
+
+.eltd-listing-feat-list-holder article .eltd-listing-feat-title {
+  text-shadow: 2px 2px 1px black; }
+
 /* Circular type buttons on homepage */
 .eltd-listing-search-holder .eltd-listing-search-categories-holder .eltd-listing-search-category-link {
   background-color: rgba(0, 0, 0, 0.7); }
@@ -208,13 +217,7 @@ footer .eltd-footer-inner {
   .eltd-listing-feat-list-holder article .eltd-listing-feat-listing-item-inner .eltd-listing-feat-image-holder img {
     height: initial !important; }
   .eltd-listing-feat-list-holder article .eltd-listing-feat-listing-item-inner .eltd-listing-feat-title-wrapper {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,757575+100&0+0,1+100 */
-    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #757575 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #757575 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #757575 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,757575+100&0+0,1+100 */ }
 
 /****** end single listing ******/
 .eltd-blog-list .eltd-blog-list-item .eltd-item-info-section .eltd-post-info-author {
