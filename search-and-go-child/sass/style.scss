@@ -31,12 +31,16 @@ $transparent_white: rgba(255, 255, 255, 0.9);
 		color: white;
 	}
 }
+
 .eltd-position-right .widget_zlogin_widget {
 	display: inline-block;
     position: relative;
     vertical-align: middle;
 }
-
+.eltd-parallax-section-holder.eltd-vertical-middle-align {
+	width: 100%; // firefox not handling the width calucation in modules.min.css
+	margin: 0px; // ditto
+}
 /* FOOTER */
 
 .eltd-footer-inner .textwidget {
