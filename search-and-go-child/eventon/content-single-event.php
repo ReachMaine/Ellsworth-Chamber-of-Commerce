@@ -48,8 +48,8 @@ global $eventon, $eventon_sin_event;
 				
 			// repeat event information header
 			$eventon_sin_event->frontend->functions->repeat_event_header($repeati, $event_id);
-
-			$content =  $eventon->evo_generator->get_single_event_data($event_id, $lang, $repeati);			
+			$ev_args = array('show_et_ft_img' => 'yes',);
+			$content =  $eventon->evo_generator->get_single_event_data($event_id, $lang, $repeati, $ev_args);			
 			echo $content[0]['content'];
 		?>
 		</div>
