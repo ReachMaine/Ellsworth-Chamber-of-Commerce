@@ -6,10 +6,10 @@
 	}
 }
 @media only screen and (max-width: 600px) {// point at which top bar hides
-
+	.ecc-mobile-only,
 	// show phone nubmer at top (inplace of top bar)
 	.ecc-top-phone {
-		display:block;
+		display:block!important;
 	}
 
 	h1 {
