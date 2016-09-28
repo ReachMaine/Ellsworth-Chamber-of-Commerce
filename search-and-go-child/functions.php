@@ -39,3 +39,13 @@ require_once(get_stylesheet_directory().'/custom/dashboard.php');
 	}
 
 	remove_filter('pre_term_description', 'wp_filter_kses');
+
+	// listing plugins is disabling admin bar for everyone except admin.  
+	// Trying to enable it for editors
+	remove_action( 'after_setup_theme', 'eltd_listing_remove_admin_toolbar');
+	add_action('after_setup_theme', 'ecc_admin_bar');
+	function ecc_admin_bar() {
+		if ( !current_user_can('administrator') && (!current_user_can('editor')) && !is_admin() ) {
+			show_admin_bar(false);
+		}
+	}
