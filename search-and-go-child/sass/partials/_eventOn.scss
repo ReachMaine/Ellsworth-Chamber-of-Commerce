@@ -35,6 +35,23 @@
  }
  // in calendar 
  .ajde_evcal_calendar {
+ 	#evcal_head {
+	 	#evcal_cur.evo_month_title  {
+			color: $calendar-highlight!important;
+		}
+ 		.evo_arrows {
+
+ 			#evcal_prev, #evcal_next {
+				background-color: $calendar-highlight;
+ 			}
+ 			#evcal_prev:hover,
+ 			#evcal_next:hover {
+ 				background-color: white;
+ 				color: $calendar-highlight;
+ 			}
+ 			
+ 		}
+ 	}
  	#evcal_list.eventon_events_list  {
 	 	.eventon_list_event.event {
 	 		.evo_card_organizer_name_t a:after {

@@ -73,6 +73,14 @@ ul.ecc_members_cats > li {
 #homepage_carousel-eoas-full-event-box p {
   color: #F9F9F9; }
 
+.ajde_evcal_calendar #evcal_head #evcal_cur.evo_month_title {
+  color: #206177 !important; }
+.ajde_evcal_calendar #evcal_head .evo_arrows #evcal_prev, .ajde_evcal_calendar #evcal_head .evo_arrows #evcal_next {
+  background-color: #206177; }
+.ajde_evcal_calendar #evcal_head .evo_arrows #evcal_prev:hover,
+.ajde_evcal_calendar #evcal_head .evo_arrows #evcal_next:hover {
+  background-color: white;
+  color: #206177; }
 .ajde_evcal_calendar #evcal_list.eventon_events_list .eventon_list_event.event .evo_card_organizer_name_t a:after {
   content: " (website) ";
   color: #1ab5c1;
