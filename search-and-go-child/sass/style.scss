@@ -265,10 +265,15 @@ ul.ecc_members_cats > li > a {
 	border-radius: 5px;
 	margin: 5px;
 	}
+	>li>a span.item_inner {
+		padding: 0px 8px;
+	}
 	>li:last-child>a span.item_inner {
-		padding-right: 19px;
+		padding-right: 8px;
 	}
 }
+
+.eltd-main-menu>ul>li>a span.item_inner
 
 .eltd-btn.eltd-btn-outline, .eltd-login-register-widget .eltd-logged-in-user>span {
 	background-color: $transparent_white;
@@ -288,7 +293,7 @@ ul.ecc_members_cats > li > a {
 }
 
 .eltd-main-menu.eltd-sticky-nav>ul>li:last-child>a span.item_inner {
-	padding-right: 19px;
+	padding-right: 8px;
 }
 
 /* Other Pages */
