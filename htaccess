@@ -1,4 +1,8 @@
+RewriteEngine On
 
+# redirect to www.
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
 
 #broswer caching
 ## EXPIRES CACHING ##
@@ -16,7 +20,6 @@ ExpiresByType image/x-icon "access plus 1 year"
 ExpiresDefault "access plus 2 days"
 </IfModule>
 ## EXPIRES CACHING ##
-
 ##Expiring Headers
 <IfModule mod_expires.c>
 # Enable expirations
@@ -36,16 +39,7 @@ ExpiresByType text/css "access plus 1 month"
 ExpiresByType application/javascript "access plus 1 year"
 </IfModule>
 
-#force all traffic to HTTPS 
-# redirect to www.
-RewriteCond %{HTTP_HOST} !^www\.
-RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
-
-RewriteEngine On 
-RewriteCond %{SERVER_PORT} 80 
-RewriteRule ^(.*)$ https://www.ellsworthchamber.org/$1 [R,L]
-
-# BEGIN rlrssslReallySimpleSSL rsssl_version[2.3.13]
+# BEGIN rlrssslReallySimpleSSL rsssl_version[2.3.14]
 <IfModule mod_rewrite.c>
 RewriteEngine on
 RewriteCond %{HTTP:X-Forwarded-Proto} !https
@@ -61,6 +55,5 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.php [L]
 </IfModule>
-
 # END WordPress
 AddHandler application/x-httpd-php56 .php .php5 .php4 .php3
