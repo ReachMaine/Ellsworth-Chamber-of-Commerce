@@ -7,13 +7,13 @@ Version: 1.0.0
 Template: search-and-go
 */
 @import url("../search-and-go/style.css");
- 
+
 @import "partials/settings";
 @import "partials/ecc";
 @import "partials/eventOn";
 @import "partials/teammembers";
 
- 
+
 /* =Theme customization starts here */
 //COLORS
 
@@ -23,7 +23,7 @@ $transparent_white: rgba(255, 255, 255, 0.9);
 /* **** header ***** */
 .ecc-top-phone {
 	display: none; // displayed at 600 px in _media.scss
-	background-color: black;
+  background-color: black;
 	text-align:center;
 	font-size: 18px;
 	line-height:30px;
@@ -41,6 +41,11 @@ $transparent_white: rgba(255, 255, 255, 0.9);
 	width: 100%; // firefox not handling the width calucation in modules.min.css
 	margin: 0px; // ditto
 }
+
+// Content
+.eltd-overlapping-content a {
+  color: #1ab5c1;
+}
 /* FOOTER */
 
 .eltd-footer-inner .textwidget {
@@ -53,10 +58,10 @@ footer .eltd-footer-inner {
 
 /* HOMEPAGE */
 .eltd-logo-wrapper {
-  	background-color: inherit !important; 
+  	background-color: inherit !important;
 	a img {
 	    -webkit-filter: drop-shadow(3px 3px 5px #333);
-	    filter: drop-shadow(3px 3px 5px #333); 
+	    filter: drop-shadow(3px 3px 5px #333);
 	}
 }
 
@@ -110,7 +115,7 @@ footer .eltd-footer-inner {
 
 
 /****** single listing ******/
-//header image 
+//header image
 .eltd-title .eltd-title-image img {
 	//width: inherit; commenting out to see if the header image scaling works better than cutting off left and right.
 	max-width: initial;
@@ -149,7 +154,7 @@ footer .eltd-footer-inner {
 		padding: 5px;
    		background-color: $theme-highlight;
 	}
-	
+
 }
 // featured listings on home page.
 .eltd-listing-feat-list-holder article {
@@ -173,7 +178,7 @@ footer .eltd-footer-inner {
 				//text-shadow: 2px 2px 1px black;
 			}
 		}
-		
+
 	}
 }
 
@@ -192,7 +197,7 @@ footer .eltd-footer-inner {
 
 
 /* blog archive */
-.eltd-listing-list-items { 
+.eltd-listing-list-items {
 	.eltd-listing-list-item {
 		.eltd-listing-item-image {
 			width: 20%;
@@ -251,7 +256,7 @@ ul.ecc_members_cats > li > a {
 			display: none;
 		}
 	}
-	.evcal_btn.evoau, 
+	.evcal_btn.evoau,
 	.evoau_submission_form.loginneeded .evcal_btn {
 		display: none;
 	}
@@ -315,4 +320,4 @@ ul.ecc_members_cats > li > a {
 	content: url("images/reach-favicon.png");
 }
 
-@import "partials/media"; // keep at end of of file 
+@import "partials/media"; // keep at end of of file
