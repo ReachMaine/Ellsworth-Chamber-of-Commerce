@@ -326,6 +326,9 @@ ul.ecc_members_cats > li > a {
 @media (max-width: 1024px) {
   ul.ecc_members_cats ul.children li {
     width: 49%; } }
+@media (max-width: 768px) {
+  .eltd-top-bar .eltd-position-right .eltd-top-bar-widget {
+    margin-left: 0px; } }
 @media only screen and (max-width: 600px) {
   .ecc-mobile-only,
   .ecc-top-phone {
