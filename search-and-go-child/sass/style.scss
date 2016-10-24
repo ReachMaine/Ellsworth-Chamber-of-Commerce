@@ -43,8 +43,12 @@ $transparent_white: rgba(255, 255, 255, 0.9);
 }
 
 // Content
-.eltd-overlapping-content a {
+.eltd-overlapping-content a, .textwidget a p{
   color: #1ab5c1;
+}
+
+.eltd-overlapping-content a:hover, .textwidget a:hover p{
+  color: darken( #1ab5c1, 30% ) ;
 }
 /* FOOTER */
 
