@@ -37,6 +37,9 @@ $transparent_white: rgba(255, 255, 255, 0.9);
     position: relative;
     vertical-align: middle;
 }
+.ecc-listing-search-row { // row on front page with listing search & big background image
+		background-size: cover; // make background image cover the screen.
+}
 .eltd-parallax-section-holder.eltd-vertical-middle-align {
 	width: 100%; // firefox not handling the width calucation in modules.min.css
 	margin: 0px; // ditto
