@@ -131,6 +131,15 @@ ul.ecc_members_cats > li {
 @media (max-width: 540px) {
   .team-member {
     width: 95%; } }
+div.eltd-testimonial-image-holder {
+  display: none !important; }
+
+div.eltd-testimonial-content {
+  width: 100% !important; }
+
+div.eltd-testimonials div.owl-wrapper-outer.autoHeight {
+  height: inherit !important; }
+
 /* =Theme customization starts here */
 /* **** header ***** */
 .ecc-top-phone {
