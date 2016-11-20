@@ -1,19 +1,19 @@
-<?php /* zig mods 
+<?php /* zig mods
 	-- hide tags
 	-- hide categories
-	-- only show gallery & video if prem
+	-- only show gallery & video  & sidebar gallery if prem
 */ ?>
-<?php 
+<?php
 	$prem = false;
 	if(isset($_POST['listingItemId'])) {
 		$listid = $_POST['listingItemId'];
 		$pkg = get_post_meta($listing_ID, 'eltd_listing_package', true);
 		if ( in_array($pkg, array(106) ) ) {
 			$prem = true;
-		} 
-	} 
+		}
+	}
 ?>
-<?php /* zig - hide tags 
+<?php /* zig - hide tags
 <div class="eltd-new-listing-item">
 
 	<label for="listing_tags">
@@ -21,16 +21,18 @@
 	</label>
 
 	<div class="eltd-profile-input  eltd-listing-dashboard-tags-holder clearfix">
+
 		<?php
 		$tags_args = eltd_listing_get_tags_args();
 
 		//get tags for current post(for editing).See eltd_listing_get_listing_fields
-
 		$tags_args['defaults'] = $tags_defaults;
 		echo eltd_listing_get_dropdown_tax_terms( $tags_args ); ?>
+
 	</div>
 
-</div> */ ?>
+</div>
+*/ ?>
 <?php /* zig - hide categories?
 <div class="eltd-new-listing-item">
 
@@ -53,7 +55,7 @@
 </div>
 */ ?>
 
-<?php if (( $show_gallery == 'yes' ) && $prem) : ?>
+<?php if (( $show_gallery == 'yes' ) && $prem) : /* zig: check if prem */ ?>
 
 	<div class="eltd-new-listing-item eltd-media-uploader-holder">
 
@@ -114,7 +116,69 @@
 
 <?php endif; ?>
 
-<?php if ( ( $show_video == 'yes' ) && $prem )  : ?>
+
+<?php if ( ( $show_sidebar_gallery == 'yes' ) && $prem )) : /* zig: check if prem */  ?>
+
+	<div class="eltd-new-listing-item eltd-media-uploader-holder">
+
+		<label for="eltd-listing-description">
+			<?php esc_html_e( 'Sidebar Gallery Images', 'eltd_listing' ); ?>
+		</label>
+
+		<div class="eltd-media-uploader-buttons-wrapper">
+
+			<div class="eltd-media-uploader-icon-holder">
+				<?php
+				if ( eltd_listing_theme_installed() ) {
+					echo search_and_go_elated_execute_shortcode( 'eltd_icon', $media_icon_multiple_images_params );
+				}
+				?>
+			</div>
+
+			<div class="eltd-media-uploader-button-holder">
+
+				<div class="eltd-media-holder eltd-multiple-media-upload eltd-sidebar-gallery-media-holder clearfix">
+					<?php
+					$gallery   = eltd_listing_check_listing_fields_values( $listing_ID, 'eltd_listing_sidebar_gallery' );
+					$images_id = explode( ',', $gallery );
+					foreach ( $images_id as $img_id ) {
+						echo wp_get_attachment_image( $img_id );
+					}
+					?>
+				</div>
+				<div class="eltd-action-buttons">
+					<a href="javascript: void(0)" data-multiple='true'
+						data-frame-title="<?php esc_html_e( 'Select Image for Sidebar Gallery', 'eltd_listing' ); //TODO Change to function for button?>"
+						data-frame-button-text="<?php esc_html_e( 'Select Image for Sidebar Gallery', 'eltd_listing' ); ?>"
+						class="eltd-upload-button">
+						<?php
+						if ( eltd_listing_theme_installed() ) {
+							echo search_and_go_elated_icon_collections()->renderIcon( 'icon_plus', 'font_elegant' );
+						}
+						?>
+					</a>
+
+					<a href="javascript: void(0)" data-multiple="true" class="eltd-remove-button eltd-sidebar-gallery-remove-button">
+						<?php
+						if ( eltd_listing_theme_installed() ) {
+							echo search_and_go_elated_icon_collections()->renderIcon( 'icon_close', 'font_elegant' );
+						}
+						?>
+					</a>
+				</div>
+
+				<input type="hidden" class="eltd-media-uploader-input eltd-sidebar-gallery-media-uploader-input" name="eltd_listing_sidebar_gallery"
+					value="<?php echo esc_attr( $gallery ); ?>">
+
+			</div>
+
+		</div>
+
+	</div>
+
+<?php endif; ?>
+
+<?php if ( ( $show_video == 'yes' ) && $prem )  : /* zig: check if prem */  ?>
 	<div class="eltd-new-listing-item">
 
 		<label for="eltd_listing_video">
@@ -262,11 +326,11 @@
 	</div>
 <?php endif; ?>
 
-<?php if (( $show_social_icons == 'yes' ) && $prem ): ?>
+<?php if ( ( $show_social_icons == 'yes' ) && $prem ) : /* zig: check if prem */  ?>
 	<div class="eltd-new-listing-item">
 
 		<label>
-			<?php esc_html_e( 'Enter Profile URL' ); ?>
+			<?php esc_html_e( 'Enter Profile URL', 'eltd_listing' ); ?>
 		</label>
 
 		<div class="eltd-social-profiles-icons clearfix">

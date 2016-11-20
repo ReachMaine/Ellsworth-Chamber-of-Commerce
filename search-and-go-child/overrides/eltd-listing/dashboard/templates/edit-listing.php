@@ -1,10 +1,10 @@
 <?php
-/* zig mods 
+/* zig mods
 	- Hide locations
 	- hide listing packages DDL
 	- hide the "type" of listing, ex.  eat, play, shop...
-	
-	only show for premium 
+
+	only show for premium
 	    - subtitle
 	    - background title image.
 
@@ -31,14 +31,14 @@
 						<?php esc_html_e( 'Listing Name', 'eltd_listing' ); ?>
 						<span class="eltd-listing-required-field">*</span>
 					</label>
-				
+
 					<div class="eltd-profile-input">
 						<input name="post_title" type="text" id="post_title" class="eltd-input-field"
 						       value="<?php echo eltd_listing_check_listing_fields_values( $listing_ID, 'post_title', false, '', 'title' ) ?>"/>
 					</div>
-				
+
 				</div>
-				<?php if ($prem) { /* zig */ ?> 
+				<?php if ($prem) { /* zig */ ?>
 				<div class="eltd-new-listing-item">
 
 					<label for="eltd_listing_subtitle">
@@ -132,7 +132,7 @@
 					</div>
 
 				</div>
-				<?php if ($prem) { /* zig */ ?> 
+				<?php if ($prem) { /* zig */ ?>
 				<div class="eltd-new-listing-item eltd-media-uploader-holder">
 
 					<label for="eltd-listing-description">
@@ -187,7 +187,7 @@
 					</div>
 				</div>
 				<?php }  /* zig */ ?>
-				<?php /* zig xout 
+				<?php /* zig xout
 				<div class="eltd-new-listing-item">
 
 					<label for="listing_location">
@@ -244,7 +244,7 @@
 
 					<div id="map" style="min-height: 300px;"></div>
 				</div>
-				<?php /* zig show type as field -  non-editiable - works, but if take out following function, 
+				<?php /* zig show type as field -  non-editiable - works, but if take out following function,
 					   * list_type options dont show.  not sure why */
 				/* <div class="eltd-new-listing-item">
 					<label for="eltd-listing-type" class="eltd-label-with-margin">
@@ -255,29 +255,28 @@
 						<input type="text" id="eltd-input-type" class="eltd-input-field"
 						       name="eltd_listing_type"
 						       value="<?php echo get_the_title(eltd_listing_check_listing_fields_values( $listing_ID, 'eltd_listing_item_type' )); ?>"
-						       placeholder="<?php echo esc_attr( 'e.g London', 'eltd_listing' ) ?>" 
+						       placeholder="<?php echo esc_attr( 'e.g London', 'eltd_listing' ) ?>"
 						       readonly="readonly"  />
 					</div>
 				</div>
-				 */ ?>	
-				<?php 
-				
-				eltd_listing_listing_types( $listing_ID ); 
+				 */ ?>
+				<?php
+
+				eltd_listing_listing_types( $listing_ID );
 				/* zig xout   dont show package level
 				$package_id = get_post_meta( $listing_ID, 'eltd_listing_package', true );
 				eltd_listing_listing_packages( $package_id );
 				*/ ?>
-				
+
 				<div class="eltd-listing-submit-holder">
 					<input type="hidden" value="<?php echo esc_attr( $listing_ID ); ?>" name="post_id"/>
 					<?php
 					if ( eltd_listing_theme_installed() ) {
 						echo search_and_go_elated_get_button_html(
 							array(
-								'text'      => esc_html__( 'Save Listing', 'themanametd' ),
-								'html_type' => 'button',
+								'text'      => esc_html__( 'Save Listing', 'eltd_listing' ),
 								'type'      => 'solid',
-								'custom_class' => 'eltd-listing-update-listing'
+								'custom_class' => 'eltd-listing-submit-listing'
 							)
 						);
 					}
@@ -289,4 +288,3 @@
 	</form>
 <?php
 do_action( 'eltd_listing_action_listing_ajax_response' );
-
