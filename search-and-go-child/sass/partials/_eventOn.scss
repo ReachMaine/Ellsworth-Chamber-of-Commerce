@@ -5,8 +5,12 @@
     	background-size: contain;
    }
 
-   // carosel (on homepage) 
+   // carosel (on homepage)
+	#homepage_carousel-map-canvas-full-event {
+		 display: none; // hide map on lightbox.
+	}
  #homepage_carousel {
+
  	.eo_card_box {
  		.eo_card_img {
  			background-position: initial;
@@ -22,7 +26,7 @@
 	 		}
 	 	}
 	}
- 	
+
  }
  // lightbox event from homepage carousel.
  #homepage_carousel-eoas-full-event-box {
@@ -33,7 +37,7 @@
  		color: #F9F9F9;
  	}
  }
- // in calendar 
+ // in calendar
  .ajde_evcal_calendar {
  	#evcal_head {
 	 	#evcal_cur.evo_month_title  {
@@ -49,7 +53,7 @@
  				background-color: white;
  				color: $calendar-highlight;
  			}
- 			
+
  		}
  	}
  	#evcal_list.eventon_events_list  {
@@ -63,7 +67,7 @@
 	 	}
 	}
  }
- 
+
  // event in list (ex: homepage)
 @media only screen and (min-width: 321px) { // everyone EXCEPT smallest phone
 .ajde_evcal_calendar:not(.boxy) {
