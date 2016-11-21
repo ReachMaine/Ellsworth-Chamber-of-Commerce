@@ -7,7 +7,7 @@
 	only show for premium
 	    - subtitle
 	    - background title image.
-
+ 21Nov16 zig = make lat/lon not readonly
 */
 	echo eltd_listing_dashboard_page_top_area( esc_html__( 'Edit Listing', 'eltd_listing' ), esc_html__( $subtitle_text, 'eltd_listing' ) );
 
@@ -228,7 +228,7 @@
 						<input type="text" id="eltd-input-latitude" class="eltd-input-field eltd-latitude"
 						       name="eltd_listing_address_latitude"
 						       value="<?php echo eltd_listing_check_listing_fields_values( $listing_ID, 'eltd_listing_address_latitude' ); ?>"
-						       readonly="readonly"/>
+						       <?php /* readonly="readonly" */ ?> />
 					</div>
 
 					<label for="eltd-input-longitude" class="eltd-label-with-margin">
@@ -239,7 +239,7 @@
 						<input type="text" id="eltd-input-longitude" class="eltd-input-field eltd-longitude"
 						       name="eltd_listing_address_longitude"
 						       value="<?php echo eltd_listing_check_listing_fields_values( $listing_ID, 'eltd_listing_address_longitude' ); ?>"
-						       readonly="readonly"/>
+						       <?php /* readonly="readonly" */ ?>  />
 					</div>
 
 					<div id="map" style="min-height: 300px;"></div>
