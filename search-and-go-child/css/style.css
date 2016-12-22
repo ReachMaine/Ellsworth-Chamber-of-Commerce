@@ -1,3 +1,4 @@
+@import url("../search-and-go/style.css");
 /*
 Theme Name: Ellsworth Chamber Search and Go
 Theme URI: http://searchandgo.elated-themes.com
@@ -6,7 +7,6 @@ Author:  Reach Maine
 Version: 1.0.0
 Template: search-and-go
 */
-@import url("../search-and-go/style.css");
 /* Colors ---------------------------------------------- */
 /* Typography ------------------------------------------ */
 /* General */
@@ -156,6 +156,9 @@ div.eltd-testimonials div.owl-wrapper-outer.autoHeight {
   position: relative;
   vertical-align: middle; }
 
+.ecc-listing-search-row {
+  background-size: cover; }
+
 .eltd-parallax-section-holder.eltd-vertical-middle-align {
   width: 100%;
   margin: 0px; }
@@ -177,8 +180,8 @@ footer .eltd-footer-inner {
 .eltd-logo-wrapper {
   background-color: inherit !important; }
   .eltd-logo-wrapper a img {
-    -webkit-filter: drop-shadow(3px 3px 5px #333);
-    filter: drop-shadow(3px 3px 5px #333); }
+    -webkit-filter: drop-shadow(3px 3px 5px #333333);
+    filter: drop-shadow(3px 3px 5px #333333); }
 
 .eltd-blog-list-item-inner {
   padding: 13px;
@@ -253,7 +256,7 @@ footer .eltd-footer-inner {
 .eltd-blog-list .eltd-blog-list-item .eltd-item-info-section .eltd-post-info-author {
   display: none; }
 
-/* blog archive */
+/*  archive */
 .eltd-listing-list-items .eltd-listing-list-item .eltd-listing-item-image {
   width: 20%;
   background-size: contain; }
@@ -264,6 +267,19 @@ footer .eltd-footer-inner {
   padding-top: 0px; }
 .eltd-blog-list-holder.eltd-boxes .eltd-item-title {
   text-align: center; }
+
+/* standard blog archive */
+.eltd-blog-holder.eltd-blog-type-standard {
+  padding-left: 0px;
+  padding-right: 0px; }
+  .eltd-blog-holder.eltd-blog-type-standard article {
+    padding-top: 20px;
+    border-bottom: 1px solid #a7a7a7;
+    padding-bottom: 20px; }
+    .eltd-blog-holder.eltd-blog-type-standard article .eltd-post-title {
+      text-align: left; }
+  .eltd-blog-holder.eltd-blog-type-standard article:first-child {
+    padding-top: 0px; }
 
 ul.ecc_members_cats > li {
   width: 100%;
