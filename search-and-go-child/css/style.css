@@ -281,6 +281,12 @@ footer .eltd-footer-inner {
   .eltd-blog-holder.eltd-blog-type-standard article:first-child {
     padding-top: 0px; }
 
+.eltd-blog-holder.eltd-blog-single {
+  padding-left: 0px;
+  padding-right: 0px; }
+  .eltd-blog-holder.eltd-blog-single article .eltd-post-text .eltd-post-text-inner p:first-child {
+    margin-top: 0px; }
+
 ul.ecc_members_cats > li {
   width: 100%;
   border-radius: 5px; }
@@ -354,6 +360,12 @@ ul.ecc_members_cats > li > a {
 @media (max-width: 1024px) {
   ul.ecc_members_cats ul.children li {
     width: 49%; } }
+@media (min-width: 768px) {
+  .eltd-blog-holder.eltd-blog-single article .eltd-post-image {
+    max-width: 43%;
+    float: left;
+    padding-right: 2%;
+    margin-bottom: 10px; } }
 @media (max-width: 768px) {
   .eltd-top-bar .eltd-position-right .eltd-top-bar-widget {
     margin-left: 0px; } }

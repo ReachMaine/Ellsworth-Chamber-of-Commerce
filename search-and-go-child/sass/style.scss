@@ -245,6 +245,20 @@ footer .eltd-footer-inner {
 	}
 
 }
+// single blog post
+
+.eltd-blog-holder.eltd-blog-single {
+	padding-left: 0px;
+	padding-right: 0px;
+	article {
+		.eltd-post-image {
+			// media file
+		}
+		.eltd-post-text .eltd-post-text-inner p:first-child {
+			margin-top: 0px;
+		}
+	}
+}
 // Category list page
 
 ul.ecc_members_cats > li {
