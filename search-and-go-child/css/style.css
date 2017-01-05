@@ -151,6 +151,9 @@ div.eltd-testimonials div.owl-wrapper-outer.autoHeight {
   .ecc-top-phone a {
     color: white; }
 
+.eltd-position-right .eltd-login-register-widget a.eltd-btn {
+  background-color: rgba(255, 255, 255, 0.9); }
+
 .eltd-position-right .widget_zlogin_widget {
   display: inline-block;
   position: relative;
@@ -204,7 +207,7 @@ footer .eltd-footer-inner {
 
 /* Circular type buttons on homepage */
 .eltd-listing-search-holder .eltd-listing-search-categories-holder .eltd-listing-search-category-link {
-  background-color: rgba(0, 0, 0, 0.7); }
+  background-color: rgba(26, 181, 193, 0.8); }
 
 .eltd-custom-font-holder {
   text-shadow: 2px 2px black;
