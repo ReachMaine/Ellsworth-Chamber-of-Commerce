@@ -179,6 +179,9 @@ div.eltd-testimonials div.owl-wrapper-outer.autoHeight {
 footer .eltd-footer-inner {
   background-color: rgba(36, 36, 36, 0.45); }
 
+ul {
+  margin: 10px 0px 10px 25px; }
+
 /* HOMEPAGE */
 .eltd-logo-wrapper {
   background-color: inherit !important; }
