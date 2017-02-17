@@ -180,7 +180,8 @@ footer .eltd-footer-inner {
   background-color: rgba(36, 36, 36, 0.45); }
 
 ul {
-  margin: 10px 0px 10px 25px; }
+  list-style-position: outside;
+  margin: 10px 0px 10px 35px; }
 
 /* HOMEPAGE */
 .eltd-logo-wrapper {
