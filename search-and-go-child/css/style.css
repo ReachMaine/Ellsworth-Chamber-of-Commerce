@@ -62,11 +62,17 @@ ul.ecc_members_cats > li {
 #homepage_carousel .eo_card_box .eo_card_img {
   background-position: initial;
   background-size: contain;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-position-x: 50%; }
 #homepage_carousel .eo_card_box .eo_card_details_box {
   display: none; }
 #homepage_carousel .eo_card_box .eo_card_downbox .eo_card_sotitle {
   text-transform: capitalize; }
+#homepage_carousel .eo_card_box .eo_card_title div span {
+  max-height: 50px;
+  font-size: 13px; }
+#homepage_carousel .eo_card_box .eo_card_p {
+  display: none; }
 
 #homepage_carousel-eoas-full-event-box .eoas_evcal_evdata_img {
   height: 0px !important; }

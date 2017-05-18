@@ -16,6 +16,7 @@
  			background-position: initial;
     		background-size: contain;
     		background-repeat: no-repeat;
+				background-position-x: 50%;
  		}
  		.eo_card_details_box { // dont show details on home page.
 	 		display: none;
@@ -25,6 +26,13 @@
 	 			text-transform: capitalize;
 	 		}
 	 	}
+		.eo_card_title div span {
+			max-height: 50px;
+			font-size: 13px;
+		}
+		.eo_card_p {
+			display: none;
+		}
 	}
 
  }
