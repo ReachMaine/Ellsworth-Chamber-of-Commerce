@@ -1,10 +1,16 @@
 Notes / Instructions
 
 1.  To change membership from reg to prem (or reserve)
-      - get listing ID
+      - get listing ID, nnn
       - in DB in the postmeta table
          search for meta_key = eltd_listing_package && post_id = nnn
          and chang the meta_value
 
          premium package:  106
          basic package;  104
+
+
+
+Template Mods/overrides.
+1.  make lat/lon editiable in the admin
+         - search-and-go/framework/libs/eltd-layout.inc
