@@ -48,6 +48,10 @@ $transparent_white: rgba(255, 255, 255, 0.9);
 	margin: 0px; // ditto
 }
 
+.eltd-header-standard .eltd-menu-area {
+	background-color: inherit;
+}
+
 // Content
 .eltd-overlapping-content a, .textwidget a p{
   color: #1ab5c1;

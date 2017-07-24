@@ -172,6 +172,9 @@ div.eltd-testimonials div.owl-wrapper-outer.autoHeight {
   width: 100%;
   margin: 0px; }
 
+.eltd-header-standard .eltd-menu-area {
+  background-color: inherit; }
+
 .eltd-overlapping-content a, .textwidget a p {
   color: #1ab5c1; }
 
