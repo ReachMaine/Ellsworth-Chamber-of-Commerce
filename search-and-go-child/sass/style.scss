@@ -32,8 +32,14 @@ $transparent_white: rgba(255, 255, 255, 0.9);
 		color: white;
 	}
 }
-.eltd-position-right .eltd-login-register-widget a.eltd-btn { //$transparent_white
-	background-color: $transparent_white; // same as header nav
+.eltd-position-right .eltd-login-register-widget {
+  padding-left: 0px; // zig 17Aug17
+
+  a.eltd-btn { //$transparent_white
+  	background-color: $transparent_white; // same as header nav
+    padding-left: 30px; // zig 17Aug17
+    padding-right: 30px; // zig 17Aug17
+  }
 }
 .eltd-position-right .widget_zlogin_widget {
 	display: inline-block;
