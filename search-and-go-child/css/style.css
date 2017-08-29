@@ -169,6 +169,33 @@ div.eltd-testimonials div.owl-wrapper-outer.autoHeight {
   position: relative;
   vertical-align: middle; }
 
+.eltd-menu-area .eltd-vertical-align-containers .eltd-position-left {
+  z-index: 3; }
+.eltd-menu-area .eltd-vertical-align-containers .eltd-position-right {
+  float: none;
+  background-image: url(images/blue-bar.png);
+  margin-left: 30px; }
+  .eltd-menu-area .eltd-vertical-align-containers .eltd-position-right ul#menu-main-menu li a {
+    color: #fff; }
+    .eltd-menu-area .eltd-vertical-align-containers .eltd-position-right ul#menu-main-menu li a .item_outer {
+      background-color: initial; }
+  .eltd-menu-area .eltd-vertical-align-containers .eltd-position-right .widget.eltd-login-register-widget a.eltd-btn.eltd-login-opener,
+  .eltd-menu-area .eltd-vertical-align-containers .eltd-position-right .widget.eltd-login-register-widget a.eltd-btn.eltd-login-opener:hover {
+    background-color: inherit !important;
+    border: 0px; }
+  .eltd-menu-area .eltd-vertical-align-containers .eltd-position-right .widget.eltd-login-register-widget a.eltd-btn.eltd-login-opener {
+    padding-top: 22px;
+    padding-right: 10px;
+    font-size: 14px; }
+    .eltd-menu-area .eltd-vertical-align-containers .eltd-position-right .widget.eltd-login-register-widget a.eltd-btn.eltd-login-opener .lnr-users,
+    .eltd-menu-area .eltd-vertical-align-containers .eltd-position-right .widget.eltd-login-register-widget a.eltd-btn.eltd-login-opener .eltd-btn-text {
+      color: #fff !important; }
+  .eltd-menu-area .eltd-vertical-align-containers .eltd-position-right .widget.eltd-login-register-widget .eltd-mobile-login-icon {
+    display: inline; }
+    .eltd-menu-area .eltd-vertical-align-containers .eltd-position-right .widget.eltd-login-register-widget .eltd-mobile-login-icon i {
+      color: #fff !important;
+      padding-right: 10px; }
+
 .ecc-listing-search-row {
   background-size: cover; }
 
@@ -392,14 +419,21 @@ ul.ecc_members_cats > li > a {
     margin-bottom: 10px; } }
 @media (max-width: 768px) {
   .eltd-top-bar .eltd-position-right .eltd-top-bar-widget {
-    margin-left: 0px; } }
+    margin-left: 0px; }
+
+  .eltd-listing-dashboard-holder-outer .eltd-listing-dashboard-nav-holder ul.eltd-listing-dashboard-nav li {
+    padding-top: 0px;
+    padding-bottom: 0px; } }
 @media only screen and (max-width: 600px) {
   .ecc-mobile-only,
   .ecc-top-phone {
     display: block !important; }
 
   h1 {
-    font-size: 22px; } }
+    font-size: 22px; }
+
+  .eltd-login-register-widget .eltd-logged-in-user > span > span:not(.eltd-logged-in-user-name) {
+    display: inline; } }
 @media (max-width: 480px) {
   ul.ecc_members_cats ul.children li {
     width: 100%; }

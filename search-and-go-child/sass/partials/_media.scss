@@ -21,7 +21,15 @@
 	.eltd-top-bar .eltd-position-right .eltd-top-bar-widget {
 		margin-left: 0px; //stops top right menu from wrapping
 	}
-
+	//.eltd-listing-dashboard-holder-outer .eltd-listing-dashboard-nav-holder ul li
+	.eltd-listing-dashboard-holder-outer .eltd-listing-dashboard-nav-holder {
+	  ul.eltd-listing-dashboard-nav { // point at which dashboard menu goes stacked
+			li {
+				padding-top: 0px;
+				padding-bottom: 0px;
+			}
+		}
+	}
 }
 
 @media only screen and (max-width: 600px) {// point at which top bar hides
@@ -33,6 +41,9 @@
 
 	h1 {
 		font-size: 22px; //Smaller H1s on mobile devices
+	}
+	.eltd-login-register-widget .eltd-logged-in-user>span>span:not(.eltd-logged-in-user-name) {
+		display: inline;
 	}
 }
 

@@ -46,6 +46,56 @@ $transparent_white: rgba(255, 255, 255, 0.9);
     position: relative;
     vertical-align: middle;
 }
+.eltd-menu-area { // REVAMP menu area - 24 aug 17 zig
+	.eltd-vertical-align-containers {
+			.eltd-position-left {
+				z-index: 3;
+			}
+			.eltd-position-right {
+				float: none;
+				background-image: url(images/blue-bar.png);
+				margin-left: 30px;
+				ul#menu-main-menu {
+					li {
+						a {
+							color: #fff;
+							.item_outer {
+								background-color: initial;
+								.item_inner {
+
+								}
+							}
+						}
+					}
+				} // ul
+				.widget.eltd-login-register-widget {
+					 a.eltd-btn.eltd-login-opener,
+					 a.eltd-btn.eltd-login-opener:hover {
+						 background-color: inherit!important;
+						 border: 0px;
+					 }
+					 a.eltd-btn.eltd-login-opener {
+						 padding-top: 22px;
+						 padding-right: 10px;
+						 font-size: 14px;
+						 .lnr-users,
+						 .eltd-btn-text {
+							 color: #fff!important;
+						 }
+
+					 }
+					 .eltd-mobile-login-icon {
+						 display: inline;
+						 i {
+						 	color: #fff!important;
+							padding-right: 10px;
+						}
+					 }
+				}
+			}
+		}
+}
+
 .ecc-listing-search-row { // row on front page with listing search & big background image
 		background-size: cover; // make background image cover the screen.
 }
