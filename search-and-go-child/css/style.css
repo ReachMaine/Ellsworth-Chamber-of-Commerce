@@ -184,8 +184,9 @@ div.eltd-testimonials div.owl-wrapper-outer.autoHeight {
     background-color: inherit !important;
     border: 0px; }
   .eltd-menu-area .eltd-vertical-align-containers .eltd-position-right .widget.eltd-login-register-widget a.eltd-btn.eltd-login-opener {
-    padding-top: 22px;
+    padding-top: 20px;
     padding-right: 10px;
+    padding-left: 30px;
     font-size: 14px; }
     .eltd-menu-area .eltd-vertical-align-containers .eltd-position-right .widget.eltd-login-register-widget a.eltd-btn.eltd-login-opener .lnr-users,
     .eltd-menu-area .eltd-vertical-align-containers .eltd-position-right .widget.eltd-login-register-widget a.eltd-btn.eltd-login-opener .eltd-btn-text {
