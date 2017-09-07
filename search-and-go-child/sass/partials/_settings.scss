@@ -32,3 +32,22 @@ $search-buttons-background: rgba(26, 181, 193,0.8); // rgba( 0, 0, 0, .7);
 .ecc-mobile-only {
 	display: none!important;
 }
+.ecc-blue-background.widget {
+	background-color: $theme-highlight;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	h4 {
+		color: white;
+		text-align: center;
+		font-weight: bold;
+		font-size: 1.75em;
+	}
+}
+
+.ecc-center-button {
+	width: 100%;
+	text-align: center;
+}
+.ecc-center {
+	text-align: center;
+}

@@ -28,6 +28,23 @@ Template: search-and-go
 .ecc-mobile-only {
   display: none !important; }
 
+.ecc-blue-background.widget {
+  background-color: #1ab5c1;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+  .ecc-blue-background.widget h4 {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.75em; }
+
+.ecc-center-button {
+  width: 100%;
+  text-align: center; }
+
+.ecc-center {
+  text-align: center; }
+
 /* ----  ecc  --------------------------------- */
 ul.ecc_members_cats li {
   list-style: none; }
