@@ -1,5 +1,5 @@
-<?php 
-/* languages customizations 
+<?php
+/* languages customizations
 */
 	if ( !function_exists('eai_change_theme_text') ){
 		function eai_change_theme_text( $translated_text, $text, $domain ) {
@@ -9,14 +9,15 @@
 			 			switch ( $translated_text ) {
 				 			case 'Organizer Address':
 				            	$translated_text = __( 'Organizer Address/Phone',  $domain  );
-				            	break; 
+				            	break;
 			            	case 'Enter Organizer Address':
 				            	$translated_text = __( 'Enter Organizer Address/Phone',  $domain  );
-				            	break; 
+				            	break;
 				            case '(Optional) Organizer Address':
 				            	$translated_text = __( '(Optional) Organizer Address/Phone',  $domain  );
-				            	break; 
+				            	break;
 			            } // end eventOn text switch
+							break;
 			 		default: // other domains
 				 		switch ( $translated_text ) {
 				            case 'Call us anytime' :
@@ -33,17 +34,17 @@
 				            	break;
 				            case 'Specification':
 				            	$translated_text = __( '',  $domain  );
-				            	break; 
+				            	break;
 				            case 'Organizer Address':
 				            	$translated_text = __( 'Organizer Address/Phone',  $domain  );
-				            	break; 
+				            	break;
 				            /* case 'Share this post:':
 				            	$translated_text = __('Share', ' $domain );
 				            	break; */
 			        	}
 			 			break;
 			 	}
-			   
+
 		    /* } */
 
 	    	return $translated_text;
