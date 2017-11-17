@@ -32,6 +32,9 @@ $search-buttons-background: rgba(26, 181, 193,0.8); // rgba( 0, 0, 0, .7);
 .ecc-mobile-only {
 	display: none!important;
 }
+.ecc-hide-all {
+	display: none;
+}
 .ecc-blue-background.widget {
 	background-color: $theme-highlight;
 	padding-top: 10px;

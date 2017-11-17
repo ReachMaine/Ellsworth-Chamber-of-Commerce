@@ -28,6 +28,9 @@ Template: search-and-go
 .ecc-mobile-only {
   display: none !important; }
 
+.ecc-hide-all {
+  display: none; }
+
 .ecc-blue-background.widget {
   background-color: #1ab5c1;
   padding-top: 10px;
