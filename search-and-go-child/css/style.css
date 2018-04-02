@@ -166,6 +166,12 @@ div.eltd-testimonial-content {
 div.eltd-testimonials div.owl-wrapper-outer.autoHeight {
   height: inherit !important; }
 
+/* styling for woocommerce */
+.product-addon h3.addon-name {
+  font-size: 1.2em;
+  margin-bottom: 0px;
+  padding-top: 10px; }
+
 /* =Theme customization starts here */
 /* **** header ***** */
 .ecc-top-phone {
