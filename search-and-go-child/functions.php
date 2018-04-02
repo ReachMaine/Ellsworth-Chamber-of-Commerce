@@ -8,11 +8,11 @@ function search_and_go_elated_child_theme_enqueue_scripts() {
 }
 add_action('wp_enqueue_scripts', 'search_and_go_elated_child_theme_enqueue_scripts', 11);
 
-require_once(get_stylesheet_directory().'/custom/ecc.php'); 
-require_once(get_stylesheet_directory().'/custom/language.php'); 
+require_once(get_stylesheet_directory().'/custom/ecc.php');
+require_once(get_stylesheet_directory().'/custom/language.php');
 //require_once(get_stylesheet_directory().'/custom/login-button-widget.php'); // dont thing we will be doing it this way.
-require_once(get_stylesheet_directory().'/custom/dashboard.php'); 
-
+require_once(get_stylesheet_directory().'/custom/dashboard.php');
+require_once(get_stylesheet_directory().'/custom/woocommerce.php'); 
 /*****  change the login screen logo ****/
 	function my_login_logo() { ?>
 		<style type="text/css">
@@ -35,12 +35,12 @@ require_once(get_stylesheet_directory().'/custom/dashboard.php');
 
 	//add_action('wp_enqueue_scripts', 'reach_scripts', 100); didnt work.
 	function reach_scripts() {
-			wp_deregister_script( 'eltd-ui-admin' ); //remove offending js for events conflict - 
+			wp_deregister_script( 'eltd-ui-admin' ); //remove offending js for events conflict -
 	}
 
 	remove_filter('pre_term_description', 'wp_filter_kses');
 
-	// listing plugins is disabling admin bar for everyone except admin.  
+	// listing plugins is disabling admin bar for everyone except admin.
 	// Trying to enable it for editors
 	remove_action( 'after_setup_theme', 'eltd_listing_remove_admin_toolbar');
 	add_action('after_setup_theme', 'ecc_admin_bar');
