@@ -172,6 +172,23 @@ div.eltd-testimonials div.owl-wrapper-outer.autoHeight {
   margin-bottom: 0px;
   padding-top: 10px; }
 
+.product .eltd-single-product-images {
+  width: 20%; }
+.product .eltd-single-product-summary {
+  width: 75%; }
+
+.shop_table .product-name a {
+  font-size: 1.3em;
+  font-weight: bold; }
+.shop_table .product-name dl.variation {
+  padding-left: 7px; }
+  .shop_table .product-name dl.variation dt {
+    font-size: 14px;
+    margin-bottom: 0px; }
+  .shop_table .product-name dl.variation dd p {
+    margin-top: 0px;
+    margin-bottom: 0px; }
+
 /* =Theme customization starts here */
 /* **** header ***** */
 .ecc-top-phone {

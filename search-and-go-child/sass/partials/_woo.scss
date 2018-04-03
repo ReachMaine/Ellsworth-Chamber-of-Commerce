@@ -7,3 +7,35 @@
     padding-top: 10px;
   }
 }
+
+.product {
+  .eltd-single-product-images {
+    width: 20%;
+  }
+  .eltd-single-product-summary {
+    width: 75%;
+  }
+}
+
+// shopping cart;
+.shop_table {
+  .product-name {
+    a {
+      font-size: 1.3em;
+      font-weight: bold;
+    }
+    dl.variation {
+      padding-left: 7px;
+      dt {
+        font-size: 14px;
+        margin-bottom: 0px;
+      }
+      dd {
+        p {
+          margin-top: 0px;
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+}
