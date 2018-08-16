@@ -18,6 +18,23 @@
 }
 
 // shopping cart;
+
+
+.shop_table {
+  // hide the up and down arrows
+  td.product-quantity {
+    .eltd-quantity-control {
+      display: none;
+    }
+  }
+  td.actions{
+    // hide update button
+    input[name=”update_cart”] {
+      display:none!important;
+    }
+  }
+}
+
 .shop_table {
   .product-name {
     a {

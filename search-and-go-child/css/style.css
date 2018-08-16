@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 Theme Name: Ellsworth Chamber Search and Go
 Theme URI: http://searchandgo.elated-themes.com
@@ -47,6 +48,9 @@ Template: search-and-go
 
 .ecc-center {
   text-align: center; }
+
+.ecc-bkg-cover {
+  background-size: cover; }
 
 /* ----  ecc  --------------------------------- */
 ul.ecc_members_cats li {
@@ -176,6 +180,11 @@ div.eltd-testimonials div.owl-wrapper-outer.autoHeight {
   width: 20%; }
 .product .eltd-single-product-summary {
   width: 75%; }
+
+.shop_table td.product-quantity .eltd-quantity-control {
+  display: none; }
+.shop_table td.actions input[name=”update_cart”] {
+  display: none !important; }
 
 .shop_table .product-name a {
   font-size: 1.3em;
