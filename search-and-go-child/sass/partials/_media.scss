@@ -16,6 +16,16 @@
 			}
 		}
 	}
+	.ecc-EHC-white { // equal space columns - white background
+		.eltd-full-section-inner {
+			display: flex;
+			.vc_column_container {
+				flex: 1;
+				background-color: white;
+			}
+		}
+
+	}
 }
 @media (max-width: 768px) { //vertical tablet
 	.eltd-top-bar .eltd-position-right .eltd-top-bar-widget {

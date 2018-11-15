@@ -472,7 +472,13 @@ ul.ecc_members_cats > li > a {
     max-width: 43%;
     float: left;
     padding-right: 2%;
-    margin-bottom: 10px; } }
+    margin-bottom: 10px; }
+
+  .ecc-EHC-white .eltd-full-section-inner {
+    display: flex; }
+    .ecc-EHC-white .eltd-full-section-inner .vc_column_container {
+      flex: 1;
+      background-color: white; } }
 @media (max-width: 768px) {
   .eltd-top-bar .eltd-position-right .eltd-top-bar-widget {
     margin-left: 0px; }
