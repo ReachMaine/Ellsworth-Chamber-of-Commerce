@@ -201,6 +201,12 @@ div.eltd-testimonials div.owl-wrapper-outer.autoHeight {
       margin-top: 0px;
       margin-bottom: 0px; }
 
+.wpcf7-form input.wpcf7-form-control.wpcf7-text,
+.wpcf7-form textarea.wpcf7-form-control.wpcf7-textarea {
+  font-weight: 400; }
+.wpcf7-form .wpcf7-mail-sent-ok {
+  border-color: #1ab5c1; }
+
 /* =Theme customization starts here */
 /* **** header ***** */
 .ecc-top-phone {
