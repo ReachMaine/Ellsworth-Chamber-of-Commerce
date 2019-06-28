@@ -274,6 +274,9 @@ div.eltd-testimonials div.owl-wrapper-outer.autoHeight {
 .eltd-overlapping-content a:hover, .textwidget a:hover p {
   color: #08373a; }
 
+.eltd-map-marker-holder .eltd-map-marker svg {
+  height: 61px; }
+
 /* FOOTER */
 .eltd-footer-inner .textwidget {
   color: white; }

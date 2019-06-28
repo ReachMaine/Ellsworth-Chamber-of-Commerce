@@ -118,6 +118,12 @@ $transparent_white: rgba(255, 255, 255, 0.9);
 .eltd-overlapping-content a:hover, .textwidget a:hover p{
   color: darken( #1ab5c1, 30% ) ;
 }
+
+// work around for IE svg images being wrong height..
+.eltd-map-marker-holder .eltd-map-marker svg {
+	height: 61px; // height auto on svg usings 150 x 300 (too tall)
+}
+
 /* FOOTER */
 
 .eltd-footer-inner .textwidget {
