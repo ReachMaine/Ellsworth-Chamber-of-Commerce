@@ -52,6 +52,10 @@ Template: search-and-go
 .ecc-bkg-cover {
   background-size: cover; }
 
+.ecc-250w {
+  max-width: 250px;
+  margin: auto; }
+
 /* ----  ecc  --------------------------------- */
 ul.ecc_members_cats li {
   list-style: none; }
