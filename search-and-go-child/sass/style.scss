@@ -177,10 +177,16 @@ ul.author-details {
 	text-shadow: 2px 2px 1px black;
 }
 
-/* Circular type buttons on homepage */
+/* Circular type buttons/ icons on homepage */
 .eltd-listing-search-holder .eltd-listing-search-categories-holder .eltd-listing-search-category-link {
 	//background-color: rgba( 0, 0, 0, .7);
 	background-color: $search-buttons-background;
+	padding: 6px;
+	.eltd-listing-search-category-link-inner-holder {
+			i {
+			font-size: 38px;
+		}
+	}
 }
 
 .eltd-custom-font-holder {
