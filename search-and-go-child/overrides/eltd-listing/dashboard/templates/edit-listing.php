@@ -14,11 +14,13 @@
 	$pkg = get_post_meta($listing_ID, 'eltd_listing_package', true);
 	if ( in_array($pkg, array(106) ) ) {
 		$prem = true;
-		echo "<!-- premium -->";
+		echo "<p> premium!</p>";
 	} else {
 		$prem = false;
-		echo "<!--regular-->";
+		echo "<p> NOT PREMIUM </p>";
 	}
+	$prem = false; //  ha ha
+	echo "<p>Nope. </p>";
 ?>
 
 	<form method="post" class="eltd-edit-listing-form" enctype="multipart/form-data"
