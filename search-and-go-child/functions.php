@@ -12,7 +12,8 @@ require_once(get_stylesheet_directory().'/custom/ecc.php');
 require_once(get_stylesheet_directory().'/custom/language.php');
 //require_once(get_stylesheet_directory().'/custom/login-button-widget.php'); // dont thing we will be doing it this way.
 require_once(get_stylesheet_directory().'/custom/dashboard.php');
-require_once(get_stylesheet_directory().'/custom/woocommerce.php'); 
+require_once(get_stylesheet_directory().'/custom/woocommerce.php');
+require_once(get_stylesheet_directory().'/custom/searchandgo.php');
 /*****  change the login screen logo ****/
 	function my_login_logo() { ?>
 		<style type="text/css">
@@ -49,3 +50,5 @@ require_once(get_stylesheet_directory().'/custom/woocommerce.php');
 			show_admin_bar(false);
 		}
 	}
+
+	remove_action('wp_ajax_eltd_listing_get_listing_fields', 'eltd_listing_get_listing_fields' );

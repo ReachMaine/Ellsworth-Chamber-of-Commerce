@@ -1,6 +1,6 @@
 <?php /* custom coding for dashboard  */
-/* 
-*  19Aug16 zig - take out add new listing from menu & dashboard 
+/*
+*  19Aug16 zig - take out add new listing from menu & dashboard
 */
 
 /***** fix the menu for the dashboard.  ***/
@@ -56,7 +56,7 @@
 			$html .= '<a href="' . esc_url(add_query_arg( array('user-action' => 'listings'), $dashboard_url )) . '">' . esc_html__('My Listings', 'eltd_listing') . '</a>';
 			$html .= '</li>';
 
-			// Events 
+			// Events
 			if($action == 'events'){
 				$html .= '<li class="'.$active_class.'">';
 			}else{
@@ -66,7 +66,7 @@
 			$html .= '<a href="'.$dashboard_events_url. '">' . esc_html__('My Events', 'eltd_listing') . '</a>';
 			$html .= '</li>';
 			echo $html;
-	}    // end of function ecc_dashboard_dropdown_menu 
+	}    // end of function ecc_dashboard_dropdown_menu
 
 	function ecc_dashboard_menu() {
 		$html .= '<div class="eltd-listing-dashboard-holder-outer">';
@@ -82,4 +82,58 @@ if(!function_exists( 'eltd_listing_edit_listing_form' )) {
 		$html = "here.";
 		return $html;
 	}
+}
+
+if ( !function_exists( 'reach_listing_get_listing_fields' ) ) {
+	/**
+	 * Ajax call
+	 * Function that returns specific listing item fields
+	 */
+	function reach_listing_get_listing_fields($in_listingTypeID){
+		if(isset($in_listingTypeID)){
+
+			$params = array();
+			$html = '';
+			if ( eltd_listing_theme_installed() ) {
+				$predefined_fields = search_and_go_elated_check_predefined_fields($in_listingTypeID);
+				$params['working_days'] = search_and_go_elated_generate_day_array();
+				$params['social'] = search_and_go_elated_generate_listing_social_icons_array();
+			} else {
+				$predefined_fields = array();
+			}
+
+			if(isset($in_listingTypeID)) {
+				$params['listing_ID'] = $in_listingTypeID;
+			}else {
+				$params['listing_ID'] = -1;
+			}
+
+			foreach($predefined_fields as $predefined_field=>$value) {
+				$param_field =  str_replace('eltd_listing_type_', '', $predefined_field);
+				$params[$param_field] = $value;
+			}
+			$params['media_icon_multiple_images_params'] = array(
+				'icon_pack' => 'linea_icons',
+				'linea_icon' => 'icon-basic-picture-multiple',
+				'custom_size' => '40',
+				'icon_color'  => '#a7a7a7'
+			);
+			$params['listing_type_id'] = $_POST['listingTypeId'];
+			$params['category_meta_query'] = search_and_go_elated_get_type_category_meta_params($_POST['listingTypeId']);
+
+			$params['category_defaults'] = array();
+			$params['tags_defaults'] = array();
+			if($params['listing_ID'] !== '-1'){
+				$params['category_defaults'] = search_and_go_elated_get_taxonomy_defaults($params['listing_ID'], 'listing-item-category');
+				$params['tags_defaults'] = search_and_go_elated_get_taxonomy_defaults($params['listing_ID'], 'listing-item-tag');
+			}
+
+			$html .= eltd_listing_get_dashboard_module_template_part('templates','listing-type-fields', '', $params);
+			echo $html;
+			eltd_listing_get_custom_listing_fields($_POST['listingTypeId'], $params['listing_ID']);
+		} // isset $in_listingTypeID
+
+	}
+
+
 }
