@@ -86,7 +86,7 @@ if(!function_exists( 'eltd_listing_edit_listing_form' )) {
 
 if ( !function_exists( 'reach_listing_get_listing_fields' ) ) {
 	/**
-	 * Ajax call
+	 * Ajax call, no longer
 	 * Function that returns specific listing item fields
 	 */
 	function reach_listing_get_listing_fields($in_listingTypeID){
@@ -118,7 +118,7 @@ if ( !function_exists( 'reach_listing_get_listing_fields' ) ) {
 				'custom_size' => '40',
 				'icon_color'  => '#a7a7a7'
 			);
-			$params['listing_type_id'] = $_POST['listingTypeId'];
+			$params['listing_type_id'] = $in_listingTypeID;
 			$params['category_meta_query'] = search_and_go_elated_get_type_category_meta_params($_POST['listingTypeId']);
 
 			$params['category_defaults'] = array();
@@ -130,7 +130,7 @@ if ( !function_exists( 'reach_listing_get_listing_fields' ) ) {
 
 			$html .= eltd_listing_get_dashboard_module_template_part('templates','listing-type-fields', '', $params);
 			echo $html;
-			eltd_listing_get_custom_listing_fields($_POST['listingTypeId'], $params['listing_ID']);
+			eltd_listing_get_custom_listing_fields($in_listingTypeID, $params['listing_ID']);
 		} // isset $in_listingTypeID
 
 	}
