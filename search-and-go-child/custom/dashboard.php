@@ -119,7 +119,7 @@ if ( !function_exists( 'reach_listing_get_listing_fields' ) ) {
 				'icon_color'  => '#a7a7a7'
 			);
 			$params['listing_type_id'] = $in_listingTypeID;
-			$params['category_meta_query'] = search_and_go_elated_get_type_category_meta_params($_POST['listingTypeId']);
+			$params['category_meta_query'] = search_and_go_elated_get_type_category_meta_params($in_listingTypeID);
 
 			$params['category_defaults'] = array();
 			$params['tags_defaults'] = array();

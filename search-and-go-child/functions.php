@@ -51,4 +51,4 @@ require_once(get_stylesheet_directory().'/custom/searchandgo.php');
 		}
 	}
 
-	remove_action('wp_ajax_eltd_listing_get_listing_fields', 'eltd_listing_get_listing_fields' );
+	//remove_action('wp_ajax_eltd_listing_get_listing_fields', 'eltd_listing_get_listing_fields' );
