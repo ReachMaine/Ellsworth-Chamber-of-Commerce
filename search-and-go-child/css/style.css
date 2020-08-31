@@ -33,7 +33,7 @@ Template: search-and-go
   display: none; }
 
 .ecc-blue-background.widget {
-  background-color: #1ab5c1;
+  background-color: #0055a5;
   padding-top: 10px;
   padding-bottom: 10px; }
   .ecc-blue-background.widget h4 {
@@ -117,7 +117,7 @@ ul.ecc_members_cats > li {
   color: #206177; }
 .ajde_evcal_calendar #evcal_list.eventon_events_list .eventon_list_event.event .evo_card_organizer_name_t a:after {
   content: " (website) ";
-  color: #1ab5c1;
+  color: #0055a5;
   font-size: smaller;
   padding-left: 10px; }
 
@@ -234,33 +234,34 @@ div.eltd-testimonials div.owl-wrapper-outer.autoHeight {
   position: relative;
   vertical-align: middle; }
 
-.eltd-menu-area .eltd-vertical-align-containers .eltd-position-left {
-  z-index: 3; }
-.eltd-menu-area .eltd-vertical-align-containers .eltd-position-right {
-  float: none;
-  background-image: url(images/blue-bar.png);
-  margin-left: 30px; }
-  .eltd-menu-area .eltd-vertical-align-containers .eltd-position-right ul#menu-main-menu li a {
-    color: #fff; }
-    .eltd-menu-area .eltd-vertical-align-containers .eltd-position-right ul#menu-main-menu li a .item_outer {
-      background-color: initial; }
-  .eltd-menu-area .eltd-vertical-align-containers .eltd-position-right .widget.eltd-login-register-widget a.eltd-btn.eltd-login-opener,
-  .eltd-menu-area .eltd-vertical-align-containers .eltd-position-right .widget.eltd-login-register-widget a.eltd-btn.eltd-login-opener:hover {
-    background-color: inherit !important;
-    border: 0px; }
-  .eltd-menu-area .eltd-vertical-align-containers .eltd-position-right .widget.eltd-login-register-widget a.eltd-btn.eltd-login-opener {
-    padding-top: 20px;
-    padding-right: 10px;
-    padding-left: 30px;
-    font-size: 14px; }
-    .eltd-menu-area .eltd-vertical-align-containers .eltd-position-right .widget.eltd-login-register-widget a.eltd-btn.eltd-login-opener .lnr-users,
-    .eltd-menu-area .eltd-vertical-align-containers .eltd-position-right .widget.eltd-login-register-widget a.eltd-btn.eltd-login-opener .eltd-btn-text {
-      color: #fff !important; }
-  .eltd-menu-area .eltd-vertical-align-containers .eltd-position-right .widget.eltd-login-register-widget .eltd-mobile-login-icon {
-    display: inline; }
-    .eltd-menu-area .eltd-vertical-align-containers .eltd-position-right .widget.eltd-login-register-widget .eltd-mobile-login-icon i {
-      color: #fff !important;
-      padding-right: 10px; }
+.eltd-menu-area {
+  background-color: rgba(0, 85, 165, 0.9) !important; }
+  .eltd-menu-area .eltd-vertical-align-containers .eltd-position-left {
+    z-index: 3; }
+  .eltd-menu-area .eltd-vertical-align-containers .eltd-position-right {
+    float: none;
+    margin-left: 30px; }
+    .eltd-menu-area .eltd-vertical-align-containers .eltd-position-right ul#menu-main-menu li a {
+      color: #fff; }
+      .eltd-menu-area .eltd-vertical-align-containers .eltd-position-right ul#menu-main-menu li a .item_outer {
+        background-color: initial; }
+    .eltd-menu-area .eltd-vertical-align-containers .eltd-position-right .widget.eltd-login-register-widget a.eltd-btn.eltd-login-opener,
+    .eltd-menu-area .eltd-vertical-align-containers .eltd-position-right .widget.eltd-login-register-widget a.eltd-btn.eltd-login-opener:hover {
+      background-color: inherit !important;
+      border: 0px; }
+    .eltd-menu-area .eltd-vertical-align-containers .eltd-position-right .widget.eltd-login-register-widget a.eltd-btn.eltd-login-opener {
+      padding-top: 20px;
+      padding-right: 10px;
+      padding-left: 30px;
+      font-size: 14px; }
+      .eltd-menu-area .eltd-vertical-align-containers .eltd-position-right .widget.eltd-login-register-widget a.eltd-btn.eltd-login-opener .lnr-users,
+      .eltd-menu-area .eltd-vertical-align-containers .eltd-position-right .widget.eltd-login-register-widget a.eltd-btn.eltd-login-opener .eltd-btn-text {
+        color: #fff !important; }
+    .eltd-menu-area .eltd-vertical-align-containers .eltd-position-right .widget.eltd-login-register-widget .eltd-mobile-login-icon {
+      display: inline; }
+      .eltd-menu-area .eltd-vertical-align-containers .eltd-position-right .widget.eltd-login-register-widget .eltd-mobile-login-icon i {
+        color: #fff !important;
+        padding-right: 10px; }
 
 .ecc-listing-search-row {
   background-size: cover; }
@@ -273,10 +274,10 @@ div.eltd-testimonials div.owl-wrapper-outer.autoHeight {
   background-color: inherit; }
 
 .eltd-overlapping-content a, .textwidget a p {
-  color: #1ab5c1; }
+  color: #0055a5; }
 
 .eltd-overlapping-content a:hover, .textwidget a:hover p {
-  color: #08373a; }
+  color: #00060c; }
 
 .eltd-map-marker-holder .eltd-map-marker svg {
   height: 61px; }
@@ -323,7 +324,7 @@ ul.author-details {
 
 /* Circular type buttons/ icons on homepage */
 .eltd-listing-search-holder .eltd-listing-search-categories-holder .eltd-listing-search-category-link {
-  background-color: rgba(26, 181, 193, 0.8);
+  background-color: rgba(0, 85, 165, 0.8);
   padding: 6px; }
   .eltd-listing-search-holder .eltd-listing-search-categories-holder .eltd-listing-search-category-link .eltd-listing-search-category-link-inner-holder i {
     font-size: 38px; }
@@ -364,7 +365,7 @@ ul.author-details {
     color: #efefef; }
 .eltd-single-listing .eltd-listing-image-gallery .eltd-gallery-arrow {
   padding: 5px;
-  background-color: #1ab5c1; }
+  background-color: #0055a5; }
 
 .eltd-listing-feat-list-holder article .eltd-listing-feat-listing-item-inner {
   text-align: center;
@@ -420,12 +421,22 @@ ul.ecc_members_cats ul.children li {
   float: left; }
 
 ul.ecc_members_cats > li > a {
-  color: #1ab5c1;
+  color: #0055a5;
   font-weight: bold; }
 
 /* search page */
 .eltd-listing-list.eltd-advanced-search-holder .eltd-listing-archive-adv-search-holder .eltd-listing-archive-adv-search-count {
-  height: inherit; }
+  height: inherit;
+  background-color: #0055a5; }
+  .eltd-listing-list.eltd-advanced-search-holder .eltd-listing-archive-adv-search-holder .eltd-listing-archive-adv-search-count .eltd-listing-left-section p,
+  .eltd-listing-list.eltd-advanced-search-holder .eltd-listing-archive-adv-search-holder .eltd-listing-archive-adv-search-count .eltd-listing-archive-adv-search-count-inner p {
+    color: white; }
+  .eltd-listing-list.eltd-advanced-search-holder .eltd-listing-archive-adv-search-holder .eltd-listing-archive-adv-search-count .eltd-listing-archive-sort-holder {
+    background-color: #0055a5; }
+    .eltd-listing-list.eltd-advanced-search-holder .eltd-listing-archive-adv-search-holder .eltd-listing-archive-adv-search-count .eltd-listing-archive-sort-holder .select2-container .select2-selection .select2-selection__rendered {
+      background-color: #0055a5; }
+      .eltd-listing-list.eltd-advanced-search-holder .eltd-listing-archive-adv-search-holder .eltd-listing-archive-adv-search-count .eltd-listing-archive-sort-holder .select2-container .select2-selection .select2-selection__rendered .select2-selection__placeholder {
+        color: white; }
 .eltd-listing-list.eltd-advanced-search-holder .eltd-listing-list-item {
   height: inherit; }
 

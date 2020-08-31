@@ -48,13 +48,14 @@ $transparent_white: rgba(255, 255, 255, 0.9);
     vertical-align: middle;
 }
 .eltd-menu-area { // REVAMP menu area - 24 aug 17 zig
+	background-color: rgba(0,85,165,.9)!important; // aug2020
 	.eltd-vertical-align-containers {
 			.eltd-position-left {
 				z-index: 3;
 			}
 			.eltd-position-right {
 				float: none;
-				background-image: url(images/blue-bar.png);
+				//background-image: url(images/blue-bar.png);
 				margin-left: 30px;
 				ul#menu-main-menu {
 					li {
@@ -112,11 +113,11 @@ $transparent_white: rgba(255, 255, 255, 0.9);
 
 // Content
 .eltd-overlapping-content a, .textwidget a p{
-  color: #1ab5c1;
+  color: $theme-highlight;
 }
 
 .eltd-overlapping-content a:hover, .textwidget a:hover p{
-  color: darken( #1ab5c1, 30% ) ;
+  color: darken( $theme-highlight, 30% ) ;
 }
 
 // work around for IE svg images being wrong height..
@@ -360,15 +361,32 @@ ul.ecc_members_cats ul.children li {
 }
 
 ul.ecc_members_cats > li > a {
-	color: #1ab5c1;
+	color: $theme-highlight;
 	font-weight: bold;
 }
 
 /* search page */
+
 .eltd-listing-list.eltd-advanced-search-holder {
-	.eltd-listing-archive-adv-search-holder .eltd-listing-archive-adv-search-count {
-		height: inherit;
-	}
+	.eltd-listing-archive-adv-search-holder {
+		.eltd-listing-archive-adv-search-count {
+				height: inherit;
+				background-color: $theme-highlight;
+				.eltd-listing-left-section p,
+				.eltd-listing-archive-adv-search-count-inner p {
+						color: white;
+				}
+				.eltd-listing-archive-sort-holder {
+					background-color: $theme-highlight;
+					.select2-container .select2-selection .select2-selection__rendered {
+						background-color: $theme-highlight;
+						.select2-selection__placeholder {
+							color: white;
+						}
+					}
+				}
+			}
+		}
 
 	.eltd-listing-list-item {
 		height: inherit;

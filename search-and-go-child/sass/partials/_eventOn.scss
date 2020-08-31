@@ -68,7 +68,7 @@
 	 	.eventon_list_event.event {
 	 		.evo_card_organizer_name_t a:after {
 	 			content: " (website) ";
-	 			color: #1ab5c1;
+	 			color: $theme-highlight;
 	 			font-size: smaller;
 	 			padding-left: 10px;
 	 		}
