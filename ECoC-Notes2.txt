@@ -1,0 +1,5 @@
+
+Notes for Search & Go V2 mods/ 
+
+- S&G when getting user listings checks the USER's package (not the listing's package)
+	override the funtions that gets the user's listings package BUT the function is in a plugin (eltd-listing)
