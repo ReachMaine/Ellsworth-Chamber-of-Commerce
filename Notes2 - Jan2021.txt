@@ -1,0 +1,35 @@
+
+Notes for Search & Go V2 mods/
+
+- S&G when getting user listings checks the user's package (not the listing's package)
+	override the funtions that gets the user's listings package BUT the function is in a plugin (eltd-listing)
+
+Issues
+ - 1.  wp-admin / ajax problem on on pop-up login screen
+ 			=> idea.... use wp-login then redirect contributers to dashboard  (in ecc.php)
+
+ - 2.  S&G checks to see if user has packages (not listing) and we are NOT USING PACKAGES!
+ 			-> override the eltd_listing_user_listings() in dashboard_functions.php of plugin eltd-listing
+
+ - 3.  Allow Admin to change listing package.
+ 			=> ? use ACF with post_meta of listing....  (hide s&g's package in admin)
+
+ - 4.  Only show allowable fields based on listing package (post_meta)
+									on front end
+									on front end edit.
+
+
+-----------------------
+Pass 1 - get new theme installed.
+	install new theme
+	update required plugins
+
+	child themes stuff....
+
+	override eltd-listing plugin dashboard-functions.php
+
+Pass 2 -
+	replace login widget?  (possibly) with wp-admin login + redirect for contributer.
+
+Pass 3 -
+   show/hide stuff based on custom field.

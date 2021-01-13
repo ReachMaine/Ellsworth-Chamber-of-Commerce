@@ -1,4 +1,8 @@
 <?php
+/* mods zig
+- eltd_listing_user_listings  - check listing package NOT user's package
+- dont show package on dashboard xout by false
+*/
 
 if( !function_exists( 'eltd_listing_get_profile_pages' ) ) {
 	/**
@@ -171,7 +175,7 @@ if(!function_exists( 'eltd_listing_update_user_profile' )){
 					if(!empty($data_array['email']) && filter_var($data_array['email'], FILTER_VALIDATE_EMAIL)){
 						wp_update_user( array( 'ID' => $user_id, 'user_email' => esc_attr($data_array['email'])));
 					}
-					
+
 					if ( ! empty( $data_array['user_url'] ) ) {
 						wp_update_user( array( 'ID' => $user_id, 'user_url' => esc_url( $data_array['user_url'] ) ) );
 					}
@@ -726,28 +730,28 @@ if(!function_exists( 'eltd_listing_edit_listing' )){
 	add_action( 'wp_ajax_eltd_listing_edit_listing', 'eltd_listing_edit_listing' );
 }
 
-if(!function_exists( 'eltd_listing_user_listings' )){
+if(!function_exists( 'eltd_listing_user_listings' )) {
 
-	function eltd_listing_user_listings($params = array()) {
+	function eltd_listing_user_listings($params = array()){
 		global $wpdb;
 
 		$user_id = get_current_user_id();
 		$results = array();
 
-		$table_name = $wpdb->prefix . 'eltd_listing_package_transactions';
+		/* zig xout - $table_name = $wpdb->prefix . 'eltd_listing_package_transactions';
 		$user_packages = $wpdb->get_results($wpdb->prepare("SELECT * FROM $table_name where user_id=%d", $user_id));
 
 		foreach ( $user_packages as $package ) {
 			$package_id = $package->package_id;
 			$package_expiry_date = $package->expire_date;
 			$package = get_post( $package_id );
-
+*/
 			$query_args = array(
 				'post_type' => 'listing-item',
 				'post_status' => array( 'pending', 'publish' ),
 				'author' => $user_id,
-				'meta_key'   => 'eltd_listing_package',
-				'meta_value' => $package_id,
+				//'meta_key'   => 'eltd_listing_package',
+				//'meta_value' => $package_id,
 				'posts_per_page'=> '-1'
 			);
 
@@ -760,7 +764,7 @@ if(!function_exists( 'eltd_listing_user_listings' )){
 				);
 			}
 
-		}
+		/* } */
 		$html = '';
 
 		$html .= '<div class="eltd-user-listings-holder">';
@@ -1388,7 +1392,7 @@ if(!function_exists( 'eltd_listing_listing_packages' )){
 
 		$data_params .= 'data-user-id = '.$current_user_id. ' ';
 
-		if( $listing_packages->have_posts() ) { ?>
+		if( $listing_packages->have_posts() && false) { /* zig xout via false */?>
 			<div class="eltd-new-listing-item eltd-listing-item-package" >
 
 				<label for="listing_package">
