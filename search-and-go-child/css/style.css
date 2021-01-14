@@ -211,6 +211,10 @@ div.eltd-testimonials div.owl-wrapper-outer.autoHeight {
 .wpcf7-form .wpcf7-mail-sent-ok {
   border-color: #1ab5c1; }
 
+/* styling for dashboard */
+body.page-template-user-dashboard .eltd-user-listings-holder .eltd-user-package-info-section .eltd-user-package-top-section {
+  display: none; }
+
 /* =Theme customization starts here */
 /* **** header ***** */
 .ecc-top-phone {

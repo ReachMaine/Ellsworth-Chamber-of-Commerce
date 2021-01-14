@@ -1,0 +1,10 @@
+/* styling for dashboard */
+body.page-template-user-dashboard {
+  .eltd-user-listings-holder {
+    .eltd-user-package-info-section {
+      .eltd-user-package-top-section { // hide the items remaning & expiration date.
+        display: none;
+      }
+    }
+  }
+}
