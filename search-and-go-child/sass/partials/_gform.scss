@@ -1,0 +1,39 @@
+/* gravity forms styling */
+.gform_wrapper.gf_simple_horizontal_wrapper {
+	.gform_heading {
+		margin-bottom: 0px;
+		.gform_description {
+			color: white;
+			margin-bottom: 0px;
+		}
+	}
+	.gform_footer {
+	//	display: flex;
+	//	justify-content: flex-end; // put button on right
+
+		input[type=submit] { //  Make submit look like buttons on the site.
+				color: $form-button-color;
+				border: 1px solid $form-button-bkg;
+				border-radius: 14px;
+		    padding: 6px 20px;
+		    text-align: center;
+		    cursor: pointer;
+			  background-color: $form-button-bkg;
+				text-transform: uppercase;
+				font-family: Poppins,sans-serif;
+				margin-top: 6px!important;
+			  //line-height: 1.7em;
+			}
+			input[type=submit]:hover {
+				background-color: $form-button-hover-bkg;
+				color: $form-button-hover-color;
+			}
+	} // gform footer
+
+} // gform wrapper
+.gform_confirmation_wrapper.gf_simple_horizontal {
+	padding-top: 10px;
+	.gform_confirmation_message {
+		color: white;
+	}
+}

@@ -215,6 +215,32 @@ div.eltd-testimonials div.owl-wrapper-outer.autoHeight {
 body.page-template-user-dashboard .eltd-user-listings-holder .eltd-user-package-info-section .eltd-user-package-top-section {
   display: none; }
 
+/* gravity forms styling */
+.gform_wrapper.gf_simple_horizontal_wrapper .gform_heading {
+  margin-bottom: 0px; }
+  .gform_wrapper.gf_simple_horizontal_wrapper .gform_heading .gform_description {
+    color: white;
+    margin-bottom: 0px; }
+.gform_wrapper.gf_simple_horizontal_wrapper .gform_footer input[type=submit] {
+  color: white;
+  border: 1px solid #0055a5;
+  border-radius: 14px;
+  padding: 6px 20px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #0055a5;
+  text-transform: uppercase;
+  font-family: Poppins,sans-serif;
+  margin-top: 6px !important; }
+.gform_wrapper.gf_simple_horizontal_wrapper .gform_footer input[type=submit]:hover {
+  background-color: white;
+  color: #0055a5; }
+
+.gform_confirmation_wrapper.gf_simple_horizontal {
+  padding-top: 10px; }
+  .gform_confirmation_wrapper.gf_simple_horizontal .gform_confirmation_message {
+    color: white; }
+
 /* =Theme customization starts here */
 /* **** header ***** */
 .ecc-top-phone {
