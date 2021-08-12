@@ -82,6 +82,9 @@ ul.ecc_members_cats > li {
 .ecc-listing-feat-list-holder.ecc-stacked .ecc-listing-feat-heading {
   text-align: center; }
 
+.ecc-inline {
+  display: inline-block; }
+
 /* end ecc ------------------------------------------ */
 .evcal_evdata_img {
   background-repeat: no-repeat;
@@ -361,7 +364,7 @@ ul.author-details {
 
 .eltd-custom-font-holder {
   text-shadow: 2px 2px black;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 85, 165, 0.8);
   border-radius: 5px; }
 
 .eltd-listing-search-holder .eltd-listing-search-categories-holder .eltd-listing-search-category-link .eltd-listing-search-category-link-inner-holder .eltd-listing-search-category-title {
