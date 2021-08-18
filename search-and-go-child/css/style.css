@@ -190,7 +190,7 @@ div.eltd-testimonials div.owl-wrapper-outer.autoHeight {
 
 .shop_table td.product-quantity .eltd-quantity-control {
   display: none; }
-.shop_table td.actions input[name=”update_cart”] {
+.shop_table td.actions input[name=ΓÇ¥update_cartΓÇ¥] {
   display: none !important; }
 
 .shop_table .product-name a {
@@ -357,14 +357,17 @@ ul.author-details {
 
 /* Circular type buttons/ icons on homepage */
 .eltd-listing-search-holder .eltd-listing-search-categories-holder .eltd-listing-search-category-link {
-  background-color: rgba(0, 85, 165, 0.8);
+  background-color: #0055a5;
   padding: 6px; }
   .eltd-listing-search-holder .eltd-listing-search-categories-holder .eltd-listing-search-category-link .eltd-listing-search-category-link-inner-holder i {
     font-size: 38px; }
 
+.eltd-listing-search-holder .eltd-listing-search-categories-holder .eltd-listing-search-category-link:hover {
+  background-color: #00498e; }
+
 .eltd-custom-font-holder {
   text-shadow: 2px 2px black;
-  background-color: rgba(0, 85, 165, 0.8);
+  background-color: #0055a5;
   border-radius: 5px; }
 
 .eltd-listing-search-holder .eltd-listing-search-categories-holder .eltd-listing-search-category-link .eltd-listing-search-category-link-inner-holder .eltd-listing-search-category-title {

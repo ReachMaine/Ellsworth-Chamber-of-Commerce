@@ -191,7 +191,9 @@ ul.author-details {
 		}
 	}
 }
-
+.eltd-listing-search-holder .eltd-listing-search-categories-holder .eltd-listing-search-category-link:hover {
+	background-color: $search-buttons-hover;
+}
 .eltd-custom-font-holder {
 	text-shadow: 2px 2px black;
 	background-color: $search-buttons-background;

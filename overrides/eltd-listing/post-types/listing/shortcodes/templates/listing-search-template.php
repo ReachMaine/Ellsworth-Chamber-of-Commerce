@@ -37,10 +37,10 @@
 					'type' => 'solid',
 					'text' => esc_html__('Search Places', 'eltd-listing'),
 					'html_type' => 'button',
-					'background_color' => 'rgba(0, 85, 165, 0.8)',
+					'background_color' => '#0055a5', // zig
 					'border_color' => '#0055a5', // zig-add
-					'hover_border_color'   => '#0055a5', // zig change
-					'hover_background_color' => '#0055a5', // zig add
+					'hover_border_color'   => '#00498e', // zig change
+					'hover_background_color' => '#00498e', // zig add
 					'hover_color'   => '#fff',
 					'icon_pack' => 'font_elegant',
 					'fe_icon' => 'arrow_carrot-right',
