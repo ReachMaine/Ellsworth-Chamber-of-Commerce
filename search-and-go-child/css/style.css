@@ -105,6 +105,10 @@ ul.ecc_members_cats > li {
 #homepage_carousel .eo_card_box .eo_card_p {
   display: none; }
 
+#homepage_carousel-eoas-full-event-box .eoas_eventon_full_description .eoas_evo_h3 i {
+  display: none; }
+#homepage_carousel-eoas-full-event-box .eoas_eventon_full_description h3 {
+  color: #206177; }
 #homepage_carousel-eoas-full-event-box .eoas_evcal_evdata_img {
   height: 0px !important; }
 #homepage_carousel-eoas-full-event-box p {
@@ -132,7 +136,7 @@ ul.ecc_members_cats > li {
     left: 100px; }
   .ajde_evcal_calendar:not(.boxy) #evcal_list.eventon_events_list .eventon_list_event .hasFtIMG .evcal_desc,
   .ajde_evcal_calendar:not(.boxy) #evcal_list.eventon_events_list .eventon_list_event a.sin_val.hasFtIMG .evcal_desc {
-    padding-left: 170px; } }
+    padding-left: 20px; } }
 /* team member styling */
 .team-members {
   display: flex;
@@ -190,7 +194,7 @@ div.eltd-testimonials div.owl-wrapper-outer.autoHeight {
 
 .shop_table td.product-quantity .eltd-quantity-control {
   display: none; }
-.shop_table td.actions input[name=ΓÇ¥update_cartΓÇ¥] {
+.shop_table td.actions input[name=”update_cart”] {
   display: none !important; }
 
 .shop_table .product-name a {

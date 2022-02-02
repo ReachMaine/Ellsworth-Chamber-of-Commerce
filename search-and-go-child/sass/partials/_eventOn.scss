@@ -38,6 +38,13 @@
  }
  // lightbox event from homepage carousel.
  #homepage_carousel-eoas-full-event-box {
+	 .eoas_eventon_full_description {
+		 .eoas_evo_h3 i { display: none;
+		 }
+		 h3 {
+			 color: $calendar-highlight;
+		 }
+	 }
  	.eoas_evcal_evdata_img {
  		height: 0px!important;
  	}
@@ -89,7 +96,7 @@
 		}
 		.hasFtIMG .evcal_desc,
 		a.sin_val.hasFtIMG .evcal_desc {
-			padding-left: 170px // was 120
+			padding-left: 20px // was 120
 		}
 	}
 }
