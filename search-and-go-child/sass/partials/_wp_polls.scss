@@ -1,0 +1,21 @@
+// styles for wp-polls
+
+$form-button-color: white;
+$form-button-bkg: #0055a5;
+$form-button-hover-bkg: white;
+$form-button-hover-color: #0055a5;
+
+
+.wp-polls-form {
+    input.Buttons:not(:disabled) {
+        background-color: $form-button-bkg;
+        color: $form-button-color;
+        padding: 6px 4px;
+        border: 1px solid $form-button-bkg;
+    }
+    input.Buttons:hover:not(:disabled) {
+        background-color: $form-button-hover-bkg;
+        color: $form-button-hover-color;
+
+    }
+}

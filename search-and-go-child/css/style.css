@@ -198,7 +198,7 @@ div.eltd-testimonials div.owl-wrapper-outer.autoHeight {
 
 .shop_table td.product-quantity .eltd-quantity-control {
   display: none; }
-.shop_table td.actions input[name=”update_cart”] {
+.shop_table td.actions input[name=ΓÇ¥update_cartΓÇ¥] {
   display: none !important; }
 
 .shop_table .product-name a {
@@ -251,6 +251,15 @@ body.page-template-user-dashboard .eltd-user-listings-holder .eltd-user-package-
   padding-top: 10px; }
   .gform_confirmation_wrapper.gf_simple_horizontal .gform_confirmation_message {
     color: white; }
+
+.wp-polls-form input.Buttons:not(:disabled) {
+  background-color: #0055a5;
+  color: white;
+  padding: 6px 4px;
+  border: 1px solid #0055a5; }
+.wp-polls-form input.Buttons:hover:not(:disabled) {
+  background-color: white;
+  color: #0055a5; }
 
 /* =Theme customization starts here */
 /* **** header ***** */
@@ -577,3 +586,5 @@ ul.ecc_members_cats > li > a {
   .car-show-sponsors {
     column-count: 3; } }
 /* end Media Settings ------------------------------------------ */
+
+/*# sourceMappingURL=style.css.map */
