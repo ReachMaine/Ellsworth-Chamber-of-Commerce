@@ -82,13 +82,6 @@ ul.ecc_members_cats > li {
 .ecc-listing-feat-list-holder.ecc-stacked .ecc-listing-feat-heading {
   text-align: center; }
 
-.ecc-inline {
-  display: inline-block; }
-
-.ecc-ad-box-shadow {
-  -webkit-box-shadow: 5px 5px 15px 5px #2E2E2E;
-  box-shadow: 5px 5px 15px 5px #2E2E2E; }
-
 /* end ecc ------------------------------------------ */
 .evcal_evdata_img {
   background-repeat: no-repeat;
@@ -109,10 +102,6 @@ ul.ecc_members_cats > li {
 #homepage_carousel .eo_card_box .eo_card_p {
   display: none; }
 
-#homepage_carousel-eoas-full-event-box .eoas_eventon_full_description .eoas_evo_h3 i {
-  display: none; }
-#homepage_carousel-eoas-full-event-box .eoas_eventon_full_description h3 {
-  color: #206177; }
 #homepage_carousel-eoas-full-event-box .eoas_evcal_evdata_img {
   height: 0px !important; }
 #homepage_carousel-eoas-full-event-box p {
@@ -140,7 +129,7 @@ ul.ecc_members_cats > li {
     left: 100px; }
   .ajde_evcal_calendar:not(.boxy) #evcal_list.eventon_events_list .eventon_list_event .hasFtIMG .evcal_desc,
   .ajde_evcal_calendar:not(.boxy) #evcal_list.eventon_events_list .eventon_list_event a.sin_val.hasFtIMG .evcal_desc {
-    padding-left: 20px; } }
+    padding-left: 170px; } }
 /* team member styling */
 .team-members {
   display: flex;
@@ -365,17 +354,14 @@ ul.author-details {
 
 /* Circular type buttons/ icons on homepage */
 .eltd-listing-search-holder .eltd-listing-search-categories-holder .eltd-listing-search-category-link {
-  background-color: #0055a5;
+  background-color: rgba(0, 85, 165, 0.8);
   padding: 6px; }
   .eltd-listing-search-holder .eltd-listing-search-categories-holder .eltd-listing-search-category-link .eltd-listing-search-category-link-inner-holder i {
     font-size: 38px; }
 
-.eltd-listing-search-holder .eltd-listing-search-categories-holder .eltd-listing-search-category-link:hover {
-  background-color: #00498e; }
-
 .eltd-custom-font-holder {
   text-shadow: 2px 2px black;
-  background-color: #0055a5;
+  background-color: rgba(0, 0, 0, 0.4);
   border-radius: 5px; }
 
 .eltd-listing-search-holder .eltd-listing-search-categories-holder .eltd-listing-search-category-link .eltd-listing-search-category-link-inner-holder .eltd-listing-search-category-title {
