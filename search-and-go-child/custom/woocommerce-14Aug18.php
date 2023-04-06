@@ -30,7 +30,7 @@ add_filter( 'woocommerce_product_tabs', 'woo_remove_product_tabs', 98 );
     }
 
 /* Woocommerce Emails */
-//add_action( 'woocommerce_email_before_order_table', 'bbloomer_add_content_specific_email', 20, 4 );
+add_action( 'woocommerce_email_before_order_table', 'bbloomer_add_content_specific_email', 20, 4 );
 function bbloomer_add_content_specific_email( $order, $sent_to_admin, $plain_text, $email ) {
     if ( $email->id == 'customer_processing_order' ) {
         echo '<p class="email-ticketsell">If your purchase includes tickets, your printable ticket(s) will be attached as a pdf to this email.</p>';
